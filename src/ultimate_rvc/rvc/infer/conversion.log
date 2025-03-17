@@ -1,0 +1,971 @@
+2025-03-15 11:20:00,402 - DEBUG - Attempting to acquire lock 1596061937840 on C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\static_ffmpeg\lock.file
+2025-03-15 11:20:00,403 - DEBUG - Lock 1596061937840 acquired on C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\static_ffmpeg\lock.file
+2025-03-15 11:20:00,403 - DEBUG - Attempting to release lock 1596061937840 on C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\static_ffmpeg\lock.file
+2025-03-15 11:20:00,404 - DEBUG - Lock 1596061937840 released on C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\static_ffmpeg\lock.file
+2025-03-15 11:20:00,489 - INFO - Audio info:
+{
+    "index": "0",
+    "codec_name": "pcm_s16le",
+    "codec_long_name": "PCM signed 16-bit little-endian",
+    "profile": "unknown",
+    "codec_type": "audio",
+    "codec_tag_string": "[1][0][0][0]",
+    "codec_tag": "0x0001",
+    "sample_fmt": "s16",
+    "sample_rate": "16000",
+    "channels": "1",
+    "channel_layout": "unknown",
+    "bits_per_sample": "16",
+    "id": "N/A",
+    "r_frame_rate": "0/0",
+    "avg_frame_rate": "0/0",
+    "time_base": "1/16000",
+    "start_pts": "N/A",
+    "start_time": "N/A",
+    "duration_ts": "81600",
+    "duration": "5.100000",
+    "bit_rate": "256072",
+    "max_bit_rate": "N/A",
+    "bits_per_raw_sample": "N/A",
+    "nb_frames": "N/A",
+    "nb_read_frames": "N/A",
+    "nb_read_packets": "N/A",
+    "DISPOSITION": {
+        "default": "0",
+        "dub": "0",
+        "original": "0",
+        "comment": "0",
+        "lyrics": "0",
+        "karaoke": "0",
+        "forced": "0",
+        "hearing_impaired": "0",
+        "visual_impaired": "0",
+        "clean_effects": "0",
+        "attached_pic": "0",
+        "timed_thumbnails": "0",
+        "captions": "0",
+        "descriptions": "0",
+        "metadata": "0",
+        "dependent": "0",
+        "still_image": "0"
+    },
+    "filename": "input.wav",
+    "nb_streams": "1",
+    "nb_programs": "0",
+    "format_name": "wav",
+    "format_long_name": "WAV / WAVE (Waveform Audio)",
+    "size": "163246",
+    "probe_score": "99"
+}
+2025-03-15 11:20:01,370 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-03-15 11:20:01,371 - INFO - Loading faiss with AVX2 support.
+2025-03-15 11:20:01,393 - INFO - Successfully loaded faiss with AVX2 support.
+2025-03-15 11:20:01,401 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-03-15 11:20:03,314 - DEBUG - Loading FFmpeg6
+2025-03-15 11:20:03,316 - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torch\_ops.py", line 1357, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\Kasparas\AppData\Local\Programs\Python\Python312\Lib\ctypes\__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\lib\libtorio_ffmpeg6.pyd' (or one of its dependencies). Try using the full path with constructor syntax.
+2025-03-15 11:20:03,317 - DEBUG - Loading FFmpeg5
+2025-03-15 11:20:03,318 - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torch\_ops.py", line 1357, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\Kasparas\AppData\Local\Programs\Python\Python312\Lib\ctypes\__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\lib\libtorio_ffmpeg5.pyd' (or one of its dependencies). Try using the full path with constructor syntax.
+2025-03-15 11:20:03,319 - DEBUG - Loading FFmpeg4
+2025-03-15 11:20:03,320 - DEBUG - Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torch\_ops.py", line 1357, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\Kasparas\AppData\Local\Programs\Python\Python312\Lib\ctypes\__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\lib\libtorio_ffmpeg4.pyd' (or one of its dependencies). Try using the full path with constructor syntax.
+2025-03-15 11:20:03,322 - DEBUG - Loading FFmpeg
+2025-03-15 11:20:03,322 - DEBUG - Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\venv\Lib\site-packages\torio\_extension\utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2025-03-15 11:20:06,577 - DEBUG - starting convert audio function. Emmbed model: contentvec
+2025-03-15 11:20:06,577 - DEBUG - Starting convert_audio with parameters:
+2025-03-15 11:20:06,577 - DEBUG -   audio_input_path: input.wav
+2025-03-15 11:20:06,577 - DEBUG -   audio_output_path: C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\21_Speech_Converted_d4e2ac75a4.wav
+2025-03-15 11:20:06,577 - DEBUG -   model_path: C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\argos.pth
+2025-03-15 11:20:06,577 - DEBUG -   index_path: C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\argos.index
+2025-03-15 11:20:06,577 - DEBUG -   pitch: -20, f0_methods: {<F0Method.RMVPE: 'rmvpe'>}, index_rate: 1.00
+2025-03-15 11:20:06,577 - DEBUG -   split_audio: True, f0_autotune: True, clean_audio: False, post_process: True
+2025-03-15 11:20:06,577 - DEBUG -   Additional kwargs: {}
+2025-03-15 11:20:06,627 - INFO - Starting network setup...
+2025-03-15 11:20:06,627 - DEBUG - Loaded original config.json:
+2025-03-15 11:20:06,628 - DEBUG - Data config: {'filter_length': 2048, 'hop_length': 400, 'max_wav_value': 32768.0, 'mel_fmax': None, 'mel_fmin': 0.0, 'n_mel_channels': 125, 'sampling_rate': 40000, 'win_length': 2048}
+2025-03-15 11:20:06,628 - DEBUG - Model config: {'filter_channels': 768, 'gin_channels': 256, 'hidden_channels': 192, 'inter_channels': 192, 'kernel_size': 3, 'n_heads': 2, 'n_layers': 6, 'p_dropout': 0, 'resblock': '1', 'resblock_dilation_sizes': [[1, 3, 5], [1, 3, 5], [1, 3, 5]], 'resblock_kernel_sizes': [3, 7, 11], 'spk_embed_dim': 109, 'upsample_initial_channel': 512, 'upsample_kernel_sizes': [16, 16, 4, 4], 'upsample_rates': [10, 10, 2, 2], 'use_spectral_norm': False}
+2025-03-15 11:20:06,628 - DEBUG - Train config: {'batch_size': 4, 'betas': [0.8, 0.99], 'c_kl': 1.0, 'c_mel': 45, 'epochs': 20000, 'eps': 1e-09, 'fp16_run': True, 'init_lr_ratio': 1, 'learning_rate': 0.0001, 'log_interval': 200, 'lr_decay': 0.999875, 'seed': 1234, 'segment_size': 12800, 'warmup_epochs': 0}
+2025-03-15 11:20:06,628 - DEBUG - Dynamic spk_embed_dim from weights: 109
+2025-03-15 11:20:06,628 - DEBUG - Using sampling rate (sr): 40000
+2025-03-15 11:20:06,628 - INFO - Dynamic parameters: use_f0=True, version=v2, text_enc_hidden_dim=768, vocoder=HiFi-GAN
+2025-03-15 11:20:06,628 - DEBUG - Synthesizer parameters: [125, 12800, 192, 192, 768, 2, 6, 3, 0, '1', [3, 7, 11], [[1, 3, 5], [1, 3, 5], [1, 3, 5]], [10, 10, 2, 2], 512, [16, 16, 4, 4], 109, 256, 40000]
+2025-03-15 11:20:06,629 - DEBUG - Initializing Synthesizer with parameters:
+2025-03-15 11:20:06,629 - DEBUG - spec_channels: 125
+2025-03-15 11:20:06,629 - DEBUG - segment_size: 12800
+2025-03-15 11:20:06,629 - DEBUG - inter_channels: 192
+2025-03-15 11:20:06,629 - DEBUG - hidden_channels: 192
+2025-03-15 11:20:06,629 - DEBUG - filter_channels: 768
+2025-03-15 11:20:06,629 - DEBUG - n_heads: 2
+2025-03-15 11:20:06,629 - DEBUG - n_layers: 6
+2025-03-15 11:20:06,629 - DEBUG - kernel_size: 3
+2025-03-15 11:20:06,629 - DEBUG - p_dropout: 0.000000
+2025-03-15 11:20:06,629 - DEBUG - resblock: 1
+2025-03-15 11:20:06,629 - DEBUG - resblock_kernel_sizes: [3, 7, 11]
+2025-03-15 11:20:06,629 - DEBUG - resblock_dilation_sizes: [[1, 3, 5], [1, 3, 5], [1, 3, 5]]
+2025-03-15 11:20:06,629 - DEBUG - upsample_rates: [10, 10, 2, 2]
+2025-03-15 11:20:06,629 - DEBUG - upsample_initial_channel: 512
+2025-03-15 11:20:06,629 - DEBUG - upsample_kernel_sizes: [16, 16, 4, 4]
+2025-03-15 11:20:06,629 - DEBUG - spk_embed_dim: 109
+2025-03-15 11:20:06,629 - DEBUG - gin_channels: 256
+2025-03-15 11:20:06,629 - DEBUG - sr: 40000
+2025-03-15 11:20:06,629 - DEBUG - use_f0: True
+2025-03-15 11:20:06,629 - DEBUG - text_enc_hidden_dim: 768
+2025-03-15 11:20:06,629 - DEBUG - vocoder: HiFi-GAN
+2025-03-15 11:20:06,629 - DEBUG - randomized: True, checkpointing: False
+2025-03-15 11:20:06,631 - INFO - hidden_channels: 192
+2025-03-15 11:20:06,672 - INFO - TextEncoder (enc_p) initialized.
+2025-03-15 11:20:06,672 - INFO - Using HiFi-GAN vocoder
+2025-03-15 11:20:06,889 - INFO - Initialized HiFiGANNSFGenerator for F0 usage.
+2025-03-15 11:20:06,956 - INFO - PosteriorEncoder (enc_q) initialized.
+2025-03-15 11:20:07,013 - INFO - ResidualCouplingBlock (flow) initialized.
+2025-03-15 11:20:07,014 - INFO - Speaker embedding (emb_g) initialized with 109 embeddings.
+2025-03-15 11:20:07,014 - INFO - Synthesizer network initialized successfully.
+2025-03-15 11:20:07,015 - DEBUG - Removed enc_q from the network.
+2025-03-15 11:20:07,042 - INFO - Model weights loaded successfully.
+2025-03-15 11:20:07,054 - INFO - Synthesizer moved to device: cpu and set to evaluation mode.
+2025-03-15 11:20:07,055 - INFO - Initializing voice conversion pipeline instance (VC).
+2025-03-15 11:20:07,055 - INFO - Initializing Pipeline with target sampling rate 40000
+2025-03-15 11:20:07,056 - DEBUG - Pipeline device set to: cpu
+2025-03-15 11:20:07,056 - DEBUG - Autotune initialized with 54 reference frequencies.
+2025-03-15 11:20:07,056 - INFO - Loading RMVPE model for F0 estimation...
+2025-03-15 11:20:07,717 - INFO - RMVPE model loaded.
+2025-03-15 11:20:07,718 - DEBUG - VC instance created with target sampling rate: 40000 and config: <ultimate_rvc.rvc.configs.config.Config object at 0x000001739CB9F290>
+2025-03-15 11:20:07,718 - INFO - Number of speakers set to: 109
+2025-03-15 11:20:07,718 - INFO - Converting audio 'input.wav'...
+2025-03-15 11:20:07,720 - INFO - Audio loaded. Shape: (81600,), max amplitude: 0.377625
+2025-03-15 11:20:07,721 - INFO - Audio loaded. Shape: (81600,), max amplitude: 0.377625
+2025-03-15 11:20:07,721 - INFO - Computed normalization factor: 0.397499
+2025-03-15 11:20:07,722 - INFO - Audio normalization not required.
+2025-03-15 11:20:07,722 - INFO - Loading embedder model: contentvec
+2025-03-15 11:20:07,809 - INFO - Embedder model loaded.
+2025-03-15 11:20:07,810 - INFO - Processed file index: C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\argos.index
+2025-03-15 11:20:07,811 - INFO - Updated target sampling rate: 50000
+2025-03-15 11:20:08,024 - DEBUG - bytecode dump:
+>          0	NOP(arg=None, lineno=1141)
+           2	RESUME(arg=0, lineno=1141)
+           4	LOAD_FAST(arg=0, lineno=1144)
+           6	LOAD_CONST(arg=1, lineno=1144)
+           8	BINARY_SUBSCR(arg=None, lineno=1144)
+          12	STORE_FAST(arg=3, lineno=1144)
+          14	LOAD_FAST(arg=1, lineno=1145)
+          16	UNARY_NEGATIVE(arg=None, lineno=1145)
+          18	LOAD_FAST(arg=3, lineno=1145)
+          20	SWAP(arg=2, lineno=1145)
+          22	COPY(arg=2, lineno=1145)
+          24	COMPARE_OP(arg=26, lineno=1145)
+          28	POP_JUMP_IF_FALSE(arg=5, lineno=1145)
+          30	LOAD_FAST(arg=1, lineno=1145)
+          32	COMPARE_OP(arg=26, lineno=1145)
+          36	POP_JUMP_IF_FALSE(arg=5, lineno=1145)
+          38	JUMP_FORWARD(arg=2, lineno=1145)
+>         40	POP_TOP(arg=None, lineno=1145)
+          42	JUMP_FORWARD(arg=2, lineno=1145)
+>         44	LOAD_CONST(arg=1, lineno=1146)
+          46	STORE_FAST(arg=3, lineno=1146)
+>         48	LOAD_FAST(arg=0, lineno=1148)
+          50	LOAD_CONST(arg=2, lineno=1148)
+          52	BINARY_SUBSCR(arg=None, lineno=1148)
+          56	STORE_FAST(arg=4, lineno=1148)
+          58	LOAD_FAST(arg=1, lineno=1149)
+          60	UNARY_NEGATIVE(arg=None, lineno=1149)
+          62	LOAD_FAST(arg=4, lineno=1149)
+          64	SWAP(arg=2, lineno=1149)
+          66	COPY(arg=2, lineno=1149)
+          68	COMPARE_OP(arg=26, lineno=1149)
+          72	POP_JUMP_IF_FALSE(arg=5, lineno=1149)
+          74	LOAD_FAST(arg=1, lineno=1149)
+          76	COMPARE_OP(arg=26, lineno=1149)
+          80	POP_JUMP_IF_FALSE(arg=5, lineno=1149)
+          82	JUMP_FORWARD(arg=2, lineno=1149)
+>         84	POP_TOP(arg=None, lineno=1149)
+          86	JUMP_FORWARD(arg=2, lineno=1149)
+>         88	LOAD_CONST(arg=1, lineno=1150)
+          90	STORE_FAST(arg=4, lineno=1150)
+>         92	LOAD_FAST(arg=2, lineno=1152)
+          94	POP_JUMP_IF_FALSE(arg=43, lineno=1152)
+          96	LOAD_GLOBAL(arg=1, lineno=1153)
+         106	LOAD_ATTR(arg=2, lineno=1153)
+         126	LOAD_FAST(arg=3, lineno=1153)
+         128	CALL(arg=1, lineno=1153)
+         136	LOAD_GLOBAL(arg=1, lineno=1153)
+         146	LOAD_ATTR(arg=2, lineno=1153)
+         166	LOAD_FAST(arg=4, lineno=1153)
+         168	CALL(arg=1, lineno=1153)
+         176	COMPARE_OP(arg=55, lineno=1153)
+         180	RETURN_VALUE(arg=None, lineno=1153)
+>        182	LOAD_GLOBAL(arg=1, lineno=1155)
+         192	LOAD_ATTR(arg=4, lineno=1155)
+         212	LOAD_FAST(arg=3, lineno=1155)
+         214	CALL(arg=1, lineno=1155)
+         222	LOAD_GLOBAL(arg=1, lineno=1155)
+         232	LOAD_ATTR(arg=4, lineno=1155)
+         252	LOAD_FAST(arg=4, lineno=1155)
+         254	CALL(arg=1, lineno=1155)
+         262	COMPARE_OP(arg=55, lineno=1155)
+         266	RETURN_VALUE(arg=None, lineno=1155)
+2025-03-15 11:20:08,025 - DEBUG - pending: deque([State(pc_initial=0 nstack_initial=0)])
+2025-03-15 11:20:08,025 - DEBUG - stack: []
+2025-03-15 11:20:08,025 - DEBUG - state.pc_initial: State(pc_initial=0 nstack_initial=0)
+2025-03-15 11:20:08,025 - DEBUG - dispatch pc=0, inst=NOP(arg=None, lineno=1141)
+2025-03-15 11:20:08,025 - DEBUG - stack []
+2025-03-15 11:20:08,025 - DEBUG - dispatch pc=2, inst=RESUME(arg=0, lineno=1141)
+2025-03-15 11:20:08,025 - DEBUG - stack []
+2025-03-15 11:20:08,025 - DEBUG - dispatch pc=4, inst=LOAD_FAST(arg=0, lineno=1144)
+2025-03-15 11:20:08,025 - DEBUG - stack []
+2025-03-15 11:20:08,025 - DEBUG - dispatch pc=6, inst=LOAD_CONST(arg=1, lineno=1144)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$x4.0']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=8, inst=BINARY_SUBSCR(arg=None, lineno=1144)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$x4.0', '$const6.1.1']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=12, inst=STORE_FAST(arg=3, lineno=1144)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$8binary_subscr.2']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=14, inst=LOAD_FAST(arg=1, lineno=1145)
+2025-03-15 11:20:08,026 - DEBUG - stack []
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=16, inst=UNARY_NEGATIVE(arg=None, lineno=1145)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$threshold14.3']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=18, inst=LOAD_FAST(arg=3, lineno=1145)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$16unary_negative.4']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=20, inst=SWAP(arg=2, lineno=1145)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$16unary_negative.4', '$x018.5']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=22, inst=COPY(arg=2, lineno=1145)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$x018.5', '$16unary_negative.4']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=24, inst=COMPARE_OP(arg=26, lineno=1145)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$x018.5', '$16unary_negative.4', '$x018.5']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=28, inst=POP_JUMP_IF_FALSE(arg=5, lineno=1145)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$x018.5', '$24compare_op.6']
+2025-03-15 11:20:08,026 - DEBUG - end state. edges=[Edge(pc=30, stack=('$x018.5',), blockstack=(), npush=0), Edge(pc=40, stack=('$x018.5',), blockstack=(), npush=0)]
+2025-03-15 11:20:08,026 - DEBUG - pending: deque([State(pc_initial=30 nstack_initial=1), State(pc_initial=40 nstack_initial=1)])
+2025-03-15 11:20:08,026 - DEBUG - stack: ['$phi30.0']
+2025-03-15 11:20:08,026 - DEBUG - state.pc_initial: State(pc_initial=30 nstack_initial=1)
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=30, inst=LOAD_FAST(arg=1, lineno=1145)
+2025-03-15 11:20:08,026 - DEBUG - stack ['$phi30.0']
+2025-03-15 11:20:08,026 - DEBUG - dispatch pc=32, inst=COMPARE_OP(arg=26, lineno=1145)
+2025-03-15 11:20:08,027 - DEBUG - stack ['$phi30.0', '$threshold30.1']
+2025-03-15 11:20:08,027 - DEBUG - dispatch pc=36, inst=POP_JUMP_IF_FALSE(arg=5, lineno=1145)
+2025-03-15 11:20:08,027 - DEBUG - stack ['$32compare_op.2']
+2025-03-15 11:20:08,027 - DEBUG - end state. edges=[Edge(pc=38, stack=(), blockstack=(), npush=0), Edge(pc=48, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,027 - DEBUG - pending: deque([State(pc_initial=40 nstack_initial=1), State(pc_initial=38 nstack_initial=0), State(pc_initial=48 nstack_initial=0)])
+2025-03-15 11:20:08,027 - DEBUG - stack: ['$phi40.0']
+2025-03-15 11:20:08,027 - DEBUG - state.pc_initial: State(pc_initial=40 nstack_initial=1)
+2025-03-15 11:20:08,027 - DEBUG - dispatch pc=40, inst=POP_TOP(arg=None, lineno=1145)
+2025-03-15 11:20:08,027 - DEBUG - stack ['$phi40.0']
+2025-03-15 11:20:08,027 - DEBUG - dispatch pc=42, inst=JUMP_FORWARD(arg=2, lineno=1145)
+2025-03-15 11:20:08,027 - DEBUG - stack []
+2025-03-15 11:20:08,027 - DEBUG - end state. edges=[Edge(pc=48, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,027 - DEBUG - pending: deque([State(pc_initial=38 nstack_initial=0), State(pc_initial=48 nstack_initial=0), State(pc_initial=48 nstack_initial=0)])
+2025-03-15 11:20:08,027 - DEBUG - stack: []
+2025-03-15 11:20:08,027 - DEBUG - state.pc_initial: State(pc_initial=38 nstack_initial=0)
+2025-03-15 11:20:08,027 - DEBUG - dispatch pc=38, inst=JUMP_FORWARD(arg=2, lineno=1145)
+2025-03-15 11:20:08,027 - DEBUG - stack []
+2025-03-15 11:20:08,027 - DEBUG - end state. edges=[Edge(pc=44, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,027 - DEBUG - pending: deque([State(pc_initial=48 nstack_initial=0), State(pc_initial=48 nstack_initial=0), State(pc_initial=44 nstack_initial=0)])
+2025-03-15 11:20:08,027 - DEBUG - stack: []
+2025-03-15 11:20:08,027 - DEBUG - state.pc_initial: State(pc_initial=48 nstack_initial=0)
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=48, inst=LOAD_FAST(arg=0, lineno=1148)
+2025-03-15 11:20:08,028 - DEBUG - stack []
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=50, inst=LOAD_CONST(arg=2, lineno=1148)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$x48.0']
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=52, inst=BINARY_SUBSCR(arg=None, lineno=1148)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$x48.0', '$const50.1.2']
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=56, inst=STORE_FAST(arg=4, lineno=1148)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$52binary_subscr.2']
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=58, inst=LOAD_FAST(arg=1, lineno=1149)
+2025-03-15 11:20:08,028 - DEBUG - stack []
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=60, inst=UNARY_NEGATIVE(arg=None, lineno=1149)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$threshold58.3']
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=62, inst=LOAD_FAST(arg=4, lineno=1149)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$60unary_negative.4']
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=64, inst=SWAP(arg=2, lineno=1149)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$60unary_negative.4', '$x162.5']
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=66, inst=COPY(arg=2, lineno=1149)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$x162.5', '$60unary_negative.4']
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=68, inst=COMPARE_OP(arg=26, lineno=1149)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$x162.5', '$60unary_negative.4', '$x162.5']
+2025-03-15 11:20:08,028 - DEBUG - dispatch pc=72, inst=POP_JUMP_IF_FALSE(arg=5, lineno=1149)
+2025-03-15 11:20:08,028 - DEBUG - stack ['$x162.5', '$68compare_op.6']
+2025-03-15 11:20:08,028 - DEBUG - end state. edges=[Edge(pc=74, stack=('$x162.5',), blockstack=(), npush=0), Edge(pc=84, stack=('$x162.5',), blockstack=(), npush=0)]
+2025-03-15 11:20:08,028 - DEBUG - pending: deque([State(pc_initial=48 nstack_initial=0), State(pc_initial=44 nstack_initial=0), State(pc_initial=74 nstack_initial=1), State(pc_initial=84 nstack_initial=1)])
+2025-03-15 11:20:08,028 - DEBUG - pending: deque([State(pc_initial=44 nstack_initial=0), State(pc_initial=74 nstack_initial=1), State(pc_initial=84 nstack_initial=1)])
+2025-03-15 11:20:08,028 - DEBUG - stack: []
+2025-03-15 11:20:08,028 - DEBUG - state.pc_initial: State(pc_initial=44 nstack_initial=0)
+2025-03-15 11:20:08,029 - DEBUG - dispatch pc=44, inst=LOAD_CONST(arg=1, lineno=1146)
+2025-03-15 11:20:08,029 - DEBUG - stack []
+2025-03-15 11:20:08,029 - DEBUG - dispatch pc=46, inst=STORE_FAST(arg=3, lineno=1146)
+2025-03-15 11:20:08,029 - DEBUG - stack ['$const44.0.1']
+2025-03-15 11:20:08,029 - DEBUG - end state. edges=[Edge(pc=48, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,029 - DEBUG - pending: deque([State(pc_initial=74 nstack_initial=1), State(pc_initial=84 nstack_initial=1), State(pc_initial=48 nstack_initial=0)])
+2025-03-15 11:20:08,029 - DEBUG - stack: ['$phi74.0']
+2025-03-15 11:20:08,029 - DEBUG - state.pc_initial: State(pc_initial=74 nstack_initial=1)
+2025-03-15 11:20:08,029 - DEBUG - dispatch pc=74, inst=LOAD_FAST(arg=1, lineno=1149)
+2025-03-15 11:20:08,029 - DEBUG - stack ['$phi74.0']
+2025-03-15 11:20:08,029 - DEBUG - dispatch pc=76, inst=COMPARE_OP(arg=26, lineno=1149)
+2025-03-15 11:20:08,029 - DEBUG - stack ['$phi74.0', '$threshold74.1']
+2025-03-15 11:20:08,029 - DEBUG - dispatch pc=80, inst=POP_JUMP_IF_FALSE(arg=5, lineno=1149)
+2025-03-15 11:20:08,029 - DEBUG - stack ['$76compare_op.2']
+2025-03-15 11:20:08,029 - DEBUG - end state. edges=[Edge(pc=82, stack=(), blockstack=(), npush=0), Edge(pc=92, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,029 - DEBUG - pending: deque([State(pc_initial=84 nstack_initial=1), State(pc_initial=48 nstack_initial=0), State(pc_initial=82 nstack_initial=0), State(pc_initial=92 nstack_initial=0)])
+2025-03-15 11:20:08,029 - DEBUG - stack: ['$phi84.0']
+2025-03-15 11:20:08,029 - DEBUG - state.pc_initial: State(pc_initial=84 nstack_initial=1)
+2025-03-15 11:20:08,029 - DEBUG - dispatch pc=84, inst=POP_TOP(arg=None, lineno=1149)
+2025-03-15 11:20:08,029 - DEBUG - stack ['$phi84.0']
+2025-03-15 11:20:08,029 - DEBUG - dispatch pc=86, inst=JUMP_FORWARD(arg=2, lineno=1149)
+2025-03-15 11:20:08,029 - DEBUG - stack []
+2025-03-15 11:20:08,029 - DEBUG - end state. edges=[Edge(pc=92, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,029 - DEBUG - pending: deque([State(pc_initial=48 nstack_initial=0), State(pc_initial=82 nstack_initial=0), State(pc_initial=92 nstack_initial=0), State(pc_initial=92 nstack_initial=0)])
+2025-03-15 11:20:08,029 - DEBUG - pending: deque([State(pc_initial=82 nstack_initial=0), State(pc_initial=92 nstack_initial=0), State(pc_initial=92 nstack_initial=0)])
+2025-03-15 11:20:08,029 - DEBUG - stack: []
+2025-03-15 11:20:08,029 - DEBUG - state.pc_initial: State(pc_initial=82 nstack_initial=0)
+2025-03-15 11:20:08,029 - DEBUG - dispatch pc=82, inst=JUMP_FORWARD(arg=2, lineno=1149)
+2025-03-15 11:20:08,029 - DEBUG - stack []
+2025-03-15 11:20:08,030 - DEBUG - end state. edges=[Edge(pc=88, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,030 - DEBUG - pending: deque([State(pc_initial=92 nstack_initial=0), State(pc_initial=92 nstack_initial=0), State(pc_initial=88 nstack_initial=0)])
+2025-03-15 11:20:08,030 - DEBUG - stack: []
+2025-03-15 11:20:08,030 - DEBUG - state.pc_initial: State(pc_initial=92 nstack_initial=0)
+2025-03-15 11:20:08,030 - DEBUG - dispatch pc=92, inst=LOAD_FAST(arg=2, lineno=1152)
+2025-03-15 11:20:08,030 - DEBUG - stack []
+2025-03-15 11:20:08,030 - DEBUG - dispatch pc=94, inst=POP_JUMP_IF_FALSE(arg=43, lineno=1152)
+2025-03-15 11:20:08,030 - DEBUG - stack ['$zero_pos92.0']
+2025-03-15 11:20:08,030 - DEBUG - end state. edges=[Edge(pc=96, stack=(), blockstack=(), npush=0), Edge(pc=182, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,030 - DEBUG - pending: deque([State(pc_initial=92 nstack_initial=0), State(pc_initial=88 nstack_initial=0), State(pc_initial=96 nstack_initial=0), State(pc_initial=182 nstack_initial=0)])
+2025-03-15 11:20:08,030 - DEBUG - pending: deque([State(pc_initial=88 nstack_initial=0), State(pc_initial=96 nstack_initial=0), State(pc_initial=182 nstack_initial=0)])
+2025-03-15 11:20:08,030 - DEBUG - stack: []
+2025-03-15 11:20:08,030 - DEBUG - state.pc_initial: State(pc_initial=88 nstack_initial=0)
+2025-03-15 11:20:08,030 - DEBUG - dispatch pc=88, inst=LOAD_CONST(arg=1, lineno=1150)
+2025-03-15 11:20:08,030 - DEBUG - stack []
+2025-03-15 11:20:08,030 - DEBUG - dispatch pc=90, inst=STORE_FAST(arg=4, lineno=1150)
+2025-03-15 11:20:08,030 - DEBUG - stack ['$const88.0.1']
+2025-03-15 11:20:08,030 - DEBUG - end state. edges=[Edge(pc=92, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:08,030 - DEBUG - pending: deque([State(pc_initial=96 nstack_initial=0), State(pc_initial=182 nstack_initial=0), State(pc_initial=92 nstack_initial=0)])
+2025-03-15 11:20:08,030 - DEBUG - stack: []
+2025-03-15 11:20:08,030 - DEBUG - state.pc_initial: State(pc_initial=96 nstack_initial=0)
+2025-03-15 11:20:08,030 - DEBUG - dispatch pc=96, inst=LOAD_GLOBAL(arg=1, lineno=1153)
+2025-03-15 11:20:08,030 - DEBUG - stack []
+2025-03-15 11:20:08,030 - DEBUG - dispatch pc=106, inst=LOAD_ATTR(arg=2, lineno=1153)
+2025-03-15 11:20:08,030 - DEBUG - stack ['$null$96.1', '$96load_global.0']
+2025-03-15 11:20:08,030 - DEBUG - dispatch pc=126, inst=LOAD_FAST(arg=3, lineno=1153)
+2025-03-15 11:20:08,030 - DEBUG - stack ['$null$96.1', '$106load_attr.2']
+2025-03-15 11:20:08,030 - DEBUG - dispatch pc=128, inst=CALL(arg=1, lineno=1153)
+2025-03-15 11:20:08,030 - DEBUG - stack ['$null$96.1', '$106load_attr.2', '$x0126.3']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=136, inst=LOAD_GLOBAL(arg=1, lineno=1153)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$128call.4']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=146, inst=LOAD_ATTR(arg=2, lineno=1153)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$128call.4', '$null$136.6', '$136load_global.5']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=166, inst=LOAD_FAST(arg=4, lineno=1153)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$128call.4', '$null$136.6', '$146load_attr.7']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=168, inst=CALL(arg=1, lineno=1153)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$128call.4', '$null$136.6', '$146load_attr.7', '$x1166.8']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=176, inst=COMPARE_OP(arg=55, lineno=1153)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$128call.4', '$168call.9']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=180, inst=RETURN_VALUE(arg=None, lineno=1153)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$176compare_op.10']
+2025-03-15 11:20:08,031 - DEBUG - end state. edges=[]
+2025-03-15 11:20:08,031 - DEBUG - pending: deque([State(pc_initial=182 nstack_initial=0), State(pc_initial=92 nstack_initial=0)])
+2025-03-15 11:20:08,031 - DEBUG - stack: []
+2025-03-15 11:20:08,031 - DEBUG - state.pc_initial: State(pc_initial=182 nstack_initial=0)
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=182, inst=LOAD_GLOBAL(arg=1, lineno=1155)
+2025-03-15 11:20:08,031 - DEBUG - stack []
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=192, inst=LOAD_ATTR(arg=4, lineno=1155)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$null$182.1', '$182load_global.0']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=212, inst=LOAD_FAST(arg=3, lineno=1155)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$null$182.1', '$192load_attr.2']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=214, inst=CALL(arg=1, lineno=1155)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$null$182.1', '$192load_attr.2', '$x0212.3']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=222, inst=LOAD_GLOBAL(arg=1, lineno=1155)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$214call.4']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=232, inst=LOAD_ATTR(arg=4, lineno=1155)
+2025-03-15 11:20:08,031 - DEBUG - stack ['$214call.4', '$null$222.6', '$222load_global.5']
+2025-03-15 11:20:08,031 - DEBUG - dispatch pc=252, inst=LOAD_FAST(arg=4, lineno=1155)
+2025-03-15 11:20:08,032 - DEBUG - stack ['$214call.4', '$null$222.6', '$232load_attr.7']
+2025-03-15 11:20:08,032 - DEBUG - dispatch pc=254, inst=CALL(arg=1, lineno=1155)
+2025-03-15 11:20:08,032 - DEBUG - stack ['$214call.4', '$null$222.6', '$232load_attr.7', '$x1252.8']
+2025-03-15 11:20:08,032 - DEBUG - dispatch pc=262, inst=COMPARE_OP(arg=55, lineno=1155)
+2025-03-15 11:20:08,032 - DEBUG - stack ['$214call.4', '$254call.9']
+2025-03-15 11:20:08,032 - DEBUG - dispatch pc=266, inst=RETURN_VALUE(arg=None, lineno=1155)
+2025-03-15 11:20:08,032 - DEBUG - stack ['$262compare_op.10']
+2025-03-15 11:20:08,032 - DEBUG - end state. edges=[]
+2025-03-15 11:20:08,032 - DEBUG - pending: deque([State(pc_initial=92 nstack_initial=0)])
+2025-03-15 11:20:08,032 - DEBUG - -------------------------Prune PHIs-------------------------
+2025-03-15 11:20:08,032 - DEBUG - Used_phis: defaultdict(<class 'set'>,
+            {State(pc_initial=0 nstack_initial=0): set(),
+             State(pc_initial=30 nstack_initial=1): {'$phi30.0'},
+             State(pc_initial=38 nstack_initial=0): set(),
+             State(pc_initial=40 nstack_initial=1): set(),
+             State(pc_initial=44 nstack_initial=0): set(),
+             State(pc_initial=48 nstack_initial=0): set(),
+             State(pc_initial=74 nstack_initial=1): {'$phi74.0'},
+             State(pc_initial=82 nstack_initial=0): set(),
+             State(pc_initial=84 nstack_initial=1): set(),
+             State(pc_initial=88 nstack_initial=0): set(),
+             State(pc_initial=92 nstack_initial=0): set(),
+             State(pc_initial=96 nstack_initial=0): set(),
+             State(pc_initial=182 nstack_initial=0): set()})
+2025-03-15 11:20:08,032 - DEBUG - defmap: {'$phi30.0': State(pc_initial=0 nstack_initial=0),
+ '$phi40.0': State(pc_initial=0 nstack_initial=0),
+ '$phi74.0': State(pc_initial=48 nstack_initial=0),
+ '$phi84.0': State(pc_initial=48 nstack_initial=0)}
+2025-03-15 11:20:08,033 - DEBUG - phismap: defaultdict(<class 'set'>,
+            {'$phi30.0': {('$x018.5', State(pc_initial=0 nstack_initial=0))},
+             '$phi40.0': {('$x018.5', State(pc_initial=0 nstack_initial=0))},
+             '$phi74.0': {('$x162.5', State(pc_initial=48 nstack_initial=0))},
+             '$phi84.0': {('$x162.5', State(pc_initial=48 nstack_initial=0))}})
+2025-03-15 11:20:08,033 - DEBUG - changing phismap: defaultdict(<class 'set'>,
+            {'$phi30.0': {('$x018.5', State(pc_initial=0 nstack_initial=0))},
+             '$phi40.0': {('$x018.5', State(pc_initial=0 nstack_initial=0))},
+             '$phi74.0': {('$x162.5', State(pc_initial=48 nstack_initial=0))},
+             '$phi84.0': {('$x162.5', State(pc_initial=48 nstack_initial=0))}})
+2025-03-15 11:20:08,033 - DEBUG - keep phismap: {'$phi30.0': {('$x018.5', State(pc_initial=0 nstack_initial=0))},
+ '$phi74.0': {('$x162.5', State(pc_initial=48 nstack_initial=0))}}
+2025-03-15 11:20:08,033 - DEBUG - new_out: defaultdict(<class 'dict'>,
+            {State(pc_initial=0 nstack_initial=0): {'$phi30.0': '$x018.5'},
+             State(pc_initial=48 nstack_initial=0): {'$phi74.0': '$x162.5'}})
+2025-03-15 11:20:08,033 - DEBUG - ----------------------DONE Prune PHIs-----------------------
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=0 nstack_initial=0):
+AdaptBlockInfo(insts=((0, {}), (2, {}), (4, {'res': '$x4.0'}), (6, {'res': '$const6.1.1'}), (8, {'index': '$const6.1.1', 'target': '$x4.0', 'res': '$8binary_subscr.2'}), (12, {'value': '$8binary_subscr.2'}), (14, {'res': '$threshold14.3'}), (16, {'value': '$threshold14.3', 'res': '$16unary_negative.4'}), (18, {'res': '$x018.5'}), (24, {'lhs': '$16unary_negative.4', 'rhs': '$x018.5', 'res': '$24compare_op.6'}), (28, {'pred': '$24compare_op.6'})), outgoing_phis={'$phi30.0': '$x018.5'}, blockstack=(), active_try_block=None, outgoing_edgepushed={30: ('$x018.5',), 40: ('$x018.5',)})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=30 nstack_initial=1):
+AdaptBlockInfo(insts=((30, {'res': '$threshold30.1'}), (32, {'lhs': '$phi30.0', 'rhs': '$threshold30.1', 'res': '$32compare_op.2'}), (36, {'pred': '$32compare_op.2'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={38: (), 48: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=38 nstack_initial=0):
+AdaptBlockInfo(insts=((38, {}),), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={44: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=40 nstack_initial=1):
+AdaptBlockInfo(insts=((42, {}),), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={48: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=44 nstack_initial=0):
+AdaptBlockInfo(insts=((44, {'res': '$const44.0.1'}), (46, {'value': '$const44.0.1'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={48: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=48 nstack_initial=0):
+AdaptBlockInfo(insts=((48, {'res': '$x48.0'}), (50, {'res': '$const50.1.2'}), (52, {'index': '$const50.1.2', 'target': '$x48.0', 'res': '$52binary_subscr.2'}), (56, {'value': '$52binary_subscr.2'}), (58, {'res': '$threshold58.3'}), (60, {'value': '$threshold58.3', 'res': '$60unary_negative.4'}), (62, {'res': '$x162.5'}), (68, {'lhs': '$60unary_negative.4', 'rhs': '$x162.5', 'res': '$68compare_op.6'}), (72, {'pred': '$68compare_op.6'})), outgoing_phis={'$phi74.0': '$x162.5'}, blockstack=(), active_try_block=None, outgoing_edgepushed={74: ('$x162.5',), 84: ('$x162.5',)})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=74 nstack_initial=1):
+AdaptBlockInfo(insts=((74, {'res': '$threshold74.1'}), (76, {'lhs': '$phi74.0', 'rhs': '$threshold74.1', 'res': '$76compare_op.2'}), (80, {'pred': '$76compare_op.2'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={82: (), 92: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=82 nstack_initial=0):
+AdaptBlockInfo(insts=((82, {}),), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={88: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=84 nstack_initial=1):
+AdaptBlockInfo(insts=((86, {}),), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={92: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=88 nstack_initial=0):
+AdaptBlockInfo(insts=((88, {'res': '$const88.0.1'}), (90, {'value': '$const88.0.1'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={92: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=92 nstack_initial=0):
+AdaptBlockInfo(insts=((92, {'res': '$zero_pos92.0'}), (94, {'pred': '$zero_pos92.0'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={96: (), 182: ()})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=96 nstack_initial=0):
+AdaptBlockInfo(insts=((96, {'idx': 0, 'res': '$96load_global.0'}), (106, {'item': '$96load_global.0', 'res': '$106load_attr.2'}), (126, {'res': '$x0126.3'}), (128, {'func': '$106load_attr.2', 'args': ['$x0126.3'], 'kw_names': None, 'res': '$128call.4'}), (136, {'idx': 0, 'res': '$136load_global.5'}), (146, {'item': '$136load_global.5', 'res': '$146load_attr.7'}), (166, {'res': '$x1166.8'}), (168, {'func': '$146load_attr.7', 'args': ['$x1166.8'], 'kw_names': None, 'res': '$168call.9'}), (176, {'lhs': '$128call.4', 'rhs': '$168call.9', 'res': '$176compare_op.10'}), (180, {'retval': '$176compare_op.10', 'castval': '$180return_value.11'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={})
+2025-03-15 11:20:08,033 - DEBUG - block_infos State(pc_initial=182 nstack_initial=0):
+AdaptBlockInfo(insts=((182, {'idx': 0, 'res': '$182load_global.0'}), (192, {'item': '$182load_global.0', 'res': '$192load_attr.2'}), (212, {'res': '$x0212.3'}), (214, {'func': '$192load_attr.2', 'args': ['$x0212.3'], 'kw_names': None, 'res': '$214call.4'}), (222, {'idx': 0, 'res': '$222load_global.5'}), (232, {'item': '$222load_global.5', 'res': '$232load_attr.7'}), (252, {'res': '$x1252.8'}), (254, {'func': '$232load_attr.7', 'args': ['$x1252.8'], 'kw_names': None, 'res': '$254call.9'}), (262, {'lhs': '$214call.4', 'rhs': '$254call.9', 'res': '$262compare_op.10'}), (266, {'retval': '$262compare_op.10', 'castval': '$266return_value.11'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={})
+2025-03-15 11:20:08,035 - DEBUG - label 0:
+    x = arg(0, name=x)                       ['x']
+    threshold = arg(1, name=threshold)       ['threshold']
+    zero_pos = arg(2, name=zero_pos)         ['zero_pos']
+    $const6.1.1 = const(int, 0)              ['$const6.1.1']
+    x0 = getitem(value=x, index=$const6.1.1, fn=<built-in function getitem>) ['$const6.1.1', 'x', 'x0']
+    $16unary_negative.4 = unary(fn=<built-in function neg>, value=threshold) ['$16unary_negative.4', 'threshold']
+    $24compare_op.6 = $16unary_negative.4 <= x0 ['$16unary_negative.4', '$24compare_op.6', 'x0']
+    bool28 = global(bool: <class 'bool'>)    ['bool28']
+    $28pred = call bool28($24compare_op.6, func=bool28, args=(Var($24compare_op.6, audio.py:1145),), kws=(), vararg=None, varkwarg=None, target=None) ['$24compare_op.6', '$28pred', 'bool28']
+    $phi30.0 = x0                            ['$phi30.0', 'x0']
+    branch $28pred, 30, 40                   ['$28pred']
+label 30:
+    $32compare_op.2 = $phi30.0 <= threshold  ['$32compare_op.2', '$phi30.0', 'threshold']
+    bool36 = global(bool: <class 'bool'>)    ['bool36']
+    $36pred = call bool36($32compare_op.2, func=bool36, args=(Var($32compare_op.2, audio.py:1145),), kws=(), vararg=None, varkwarg=None, target=None) ['$32compare_op.2', '$36pred', 'bool36']
+    branch $36pred, 38, 48                   ['$36pred']
+label 38:
+    jump 44                                  []
+label 40:
+    jump 48                                  []
+label 44:
+    x0 = const(int, 0)                       ['x0']
+    jump 48                                  []
+label 48:
+    $const50.1.2 = const(int, -1)            ['$const50.1.2']
+    x1 = getitem(value=x, index=$const50.1.2, fn=<built-in function getitem>) ['$const50.1.2', 'x', 'x1']
+    $60unary_negative.4 = unary(fn=<built-in function neg>, value=threshold) ['$60unary_negative.4', 'threshold']
+    $68compare_op.6 = $60unary_negative.4 <= x1 ['$60unary_negative.4', '$68compare_op.6', 'x1']
+    bool72 = global(bool: <class 'bool'>)    ['bool72']
+    $72pred = call bool72($68compare_op.6, func=bool72, args=(Var($68compare_op.6, audio.py:1149),), kws=(), vararg=None, varkwarg=None, target=None) ['$68compare_op.6', '$72pred', 'bool72']
+    $phi74.0 = x1                            ['$phi74.0', 'x1']
+    branch $72pred, 74, 84                   ['$72pred']
+label 74:
+    $76compare_op.2 = $phi74.0 <= threshold  ['$76compare_op.2', '$phi74.0', 'threshold']
+    bool80 = global(bool: <class 'bool'>)    ['bool80']
+    $80pred = call bool80($76compare_op.2, func=bool80, args=(Var($76compare_op.2, audio.py:1149),), kws=(), vararg=None, varkwarg=None, target=None) ['$76compare_op.2', '$80pred', 'bool80']
+    branch $80pred, 82, 92                   ['$80pred']
+label 82:
+    jump 88                                  []
+label 84:
+    jump 92                                  []
+label 88:
+    x1 = const(int, 0)                       ['x1']
+    jump 92                                  []
+label 92:
+    bool94 = global(bool: <class 'bool'>)    ['bool94']
+    $94pred = call bool94(zero_pos, func=bool94, args=(Var(zero_pos, audio.py:1141),), kws=(), vararg=None, varkwarg=None, target=None) ['$94pred', 'bool94', 'zero_pos']
+    branch $94pred, 96, 182                  ['$94pred']
+label 96:
+    $96load_global.0 = global(np: <module 'numpy' from 'C:\\Users\\Kasparas\\argos_tts\\Main_RVC\\u-rvc_GcolabCp\\venv\\Lib\\site-packages\\numpy\\__init__.py'>) ['$96load_global.0']
+    $106load_attr.2 = getattr(value=$96load_global.0, attr=signbit) ['$106load_attr.2', '$96load_global.0']
+    $128call.4 = call $106load_attr.2(x0, func=$106load_attr.2, args=[Var(x0, audio.py:1144)], kws=(), vararg=None, varkwarg=None, target=None) ['$106load_attr.2', '$128call.4', 'x0']
+    $136load_global.5 = global(np: <module 'numpy' from 'C:\\Users\\Kasparas\\argos_tts\\Main_RVC\\u-rvc_GcolabCp\\venv\\Lib\\site-packages\\numpy\\__init__.py'>) ['$136load_global.5']
+    $146load_attr.7 = getattr(value=$136load_global.5, attr=signbit) ['$136load_global.5', '$146load_attr.7']
+    $168call.9 = call $146load_attr.7(x1, func=$146load_attr.7, args=[Var(x1, audio.py:1148)], kws=(), vararg=None, varkwarg=None, target=None) ['$146load_attr.7', '$168call.9', 'x1']
+    $176compare_op.10 = $128call.4 != $168call.9 ['$128call.4', '$168call.9', '$176compare_op.10']
+    $180return_value.11 = cast(value=$176compare_op.10) ['$176compare_op.10', '$180return_value.11']
+    return $180return_value.11               ['$180return_value.11']
+label 182:
+    $182load_global.0 = global(np: <module 'numpy' from 'C:\\Users\\Kasparas\\argos_tts\\Main_RVC\\u-rvc_GcolabCp\\venv\\Lib\\site-packages\\numpy\\__init__.py'>) ['$182load_global.0']
+    $192load_attr.2 = getattr(value=$182load_global.0, attr=sign) ['$182load_global.0', '$192load_attr.2']
+    $214call.4 = call $192load_attr.2(x0, func=$192load_attr.2, args=[Var(x0, audio.py:1144)], kws=(), vararg=None, varkwarg=None, target=None) ['$192load_attr.2', '$214call.4', 'x0']
+    $222load_global.5 = global(np: <module 'numpy' from 'C:\\Users\\Kasparas\\argos_tts\\Main_RVC\\u-rvc_GcolabCp\\venv\\Lib\\site-packages\\numpy\\__init__.py'>) ['$222load_global.5']
+    $232load_attr.7 = getattr(value=$222load_global.5, attr=sign) ['$222load_global.5', '$232load_attr.7']
+    $254call.9 = call $232load_attr.7(x1, func=$232load_attr.7, args=[Var(x1, audio.py:1148)], kws=(), vararg=None, varkwarg=None, target=None) ['$232load_attr.7', '$254call.9', 'x1']
+    $262compare_op.10 = $214call.4 != $254call.9 ['$214call.4', '$254call.9', '$262compare_op.10']
+    $266return_value.11 = cast(value=$262compare_op.10) ['$262compare_op.10', '$266return_value.11']
+    return $266return_value.11               ['$266return_value.11']
+
+2025-03-15 11:20:08,515 - DEBUG - bytecode dump:
+>          0	NOP(arg=None, lineno=1039)
+           2	RESUME(arg=0, lineno=1039)
+           4	LOAD_FAST(arg=0, lineno=1042)
+           6	LOAD_CONST(arg=1, lineno=1042)
+           8	BINARY_SUBSCR(arg=None, lineno=1042)
+          12	LOAD_FAST(arg=0, lineno=1042)
+          14	LOAD_CONST(arg=2, lineno=1042)
+          16	BINARY_SUBSCR(arg=None, lineno=1042)
+          20	COMPARE_OP(arg=68, lineno=1042)
+          24	LOAD_FAST(arg=0, lineno=1042)
+          26	LOAD_CONST(arg=1, lineno=1042)
+          28	BINARY_SUBSCR(arg=None, lineno=1042)
+          32	LOAD_FAST(arg=0, lineno=1042)
+          34	LOAD_CONST(arg=3, lineno=1042)
+          36	BINARY_SUBSCR(arg=None, lineno=1042)
+          40	COMPARE_OP(arg=92, lineno=1042)
+          44	BINARY_OP(arg=1, lineno=1042)
+          48	RETURN_VALUE(arg=None, lineno=1042)
+2025-03-15 11:20:08,515 - DEBUG - pending: deque([State(pc_initial=0 nstack_initial=0)])
+2025-03-15 11:20:08,515 - DEBUG - stack: []
+2025-03-15 11:20:08,515 - DEBUG - state.pc_initial: State(pc_initial=0 nstack_initial=0)
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=0, inst=NOP(arg=None, lineno=1039)
+2025-03-15 11:20:08,516 - DEBUG - stack []
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=2, inst=RESUME(arg=0, lineno=1039)
+2025-03-15 11:20:08,516 - DEBUG - stack []
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=4, inst=LOAD_FAST(arg=0, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack []
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=6, inst=LOAD_CONST(arg=1, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$x4.0']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=8, inst=BINARY_SUBSCR(arg=None, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$x4.0', '$const6.1.1']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=12, inst=LOAD_FAST(arg=0, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$8binary_subscr.2']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=14, inst=LOAD_CONST(arg=2, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$8binary_subscr.2', '$x12.3']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=16, inst=BINARY_SUBSCR(arg=None, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$8binary_subscr.2', '$x12.3', '$const14.4.2']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=20, inst=COMPARE_OP(arg=68, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$8binary_subscr.2', '$16binary_subscr.5']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=24, inst=LOAD_FAST(arg=0, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$20compare_op.6']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=26, inst=LOAD_CONST(arg=1, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$20compare_op.6', '$x24.7']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=28, inst=BINARY_SUBSCR(arg=None, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$20compare_op.6', '$x24.7', '$const26.8.1']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=32, inst=LOAD_FAST(arg=0, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$20compare_op.6', '$28binary_subscr.9']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=34, inst=LOAD_CONST(arg=3, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$20compare_op.6', '$28binary_subscr.9', '$x32.10']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=36, inst=BINARY_SUBSCR(arg=None, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$20compare_op.6', '$28binary_subscr.9', '$x32.10', '$const34.11.3']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=40, inst=COMPARE_OP(arg=92, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$20compare_op.6', '$28binary_subscr.9', '$36binary_subscr.12']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=44, inst=BINARY_OP(arg=1, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$20compare_op.6', '$40compare_op.13']
+2025-03-15 11:20:08,516 - DEBUG - dispatch pc=48, inst=RETURN_VALUE(arg=None, lineno=1042)
+2025-03-15 11:20:08,516 - DEBUG - stack ['$binop_and_44.14']
+2025-03-15 11:20:08,516 - DEBUG - end state. edges=[]
+2025-03-15 11:20:08,516 - DEBUG - -------------------------Prune PHIs-------------------------
+2025-03-15 11:20:08,516 - DEBUG - Used_phis: defaultdict(<class 'set'>, {State(pc_initial=0 nstack_initial=0): set()})
+2025-03-15 11:20:08,516 - DEBUG - defmap: {}
+2025-03-15 11:20:08,516 - DEBUG - phismap: defaultdict(<class 'set'>, {})
+2025-03-15 11:20:08,516 - DEBUG - changing phismap: defaultdict(<class 'set'>, {})
+2025-03-15 11:20:08,518 - DEBUG - keep phismap: {}
+2025-03-15 11:20:08,518 - DEBUG - new_out: defaultdict(<class 'dict'>, {})
+2025-03-15 11:20:08,518 - DEBUG - ----------------------DONE Prune PHIs-----------------------
+2025-03-15 11:20:08,518 - DEBUG - block_infos State(pc_initial=0 nstack_initial=0):
+AdaptBlockInfo(insts=((0, {}), (2, {}), (4, {'res': '$x4.0'}), (6, {'res': '$const6.1.1'}), (8, {'index': '$const6.1.1', 'target': '$x4.0', 'res': '$8binary_subscr.2'}), (12, {'res': '$x12.3'}), (14, {'res': '$const14.4.2'}), (16, {'index': '$const14.4.2', 'target': '$x12.3', 'res': '$16binary_subscr.5'}), (20, {'lhs': '$8binary_subscr.2', 'rhs': '$16binary_subscr.5', 'res': '$20compare_op.6'}), (24, {'res': '$x24.7'}), (26, {'res': '$const26.8.1'}), (28, {'index': '$const26.8.1', 'target': '$x24.7', 'res': '$28binary_subscr.9'}), (32, {'res': '$x32.10'}), (34, {'res': '$const34.11.3'}), (36, {'index': '$const34.11.3', 'target': '$x32.10', 'res': '$36binary_subscr.12'}), (40, {'lhs': '$28binary_subscr.9', 'rhs': '$36binary_subscr.12', 'res': '$40compare_op.13'}), (44, {'op': '&', 'lhs': '$20compare_op.6', 'rhs': '$40compare_op.13', 'res': '$binop_and_44.14'}), (48, {'retval': '$binop_and_44.14', 'castval': '$48return_value.15'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={})
+2025-03-15 11:20:08,518 - DEBUG - label 0:
+    x = arg(0, name=x)                       ['x']
+    $const6.1.1 = const(int, 0)              ['$const6.1.1']
+    $8binary_subscr.2 = getitem(value=x, index=$const6.1.1, fn=<built-in function getitem>) ['$8binary_subscr.2', '$const6.1.1', 'x']
+    $const14.4.2 = const(int, -1)            ['$const14.4.2']
+    $16binary_subscr.5 = getitem(value=x, index=$const14.4.2, fn=<built-in function getitem>) ['$16binary_subscr.5', '$const14.4.2', 'x']
+    $20compare_op.6 = $8binary_subscr.2 > $16binary_subscr.5 ['$16binary_subscr.5', '$20compare_op.6', '$8binary_subscr.2']
+    $const26.8.1 = const(int, 0)             ['$const26.8.1']
+    $28binary_subscr.9 = getitem(value=x, index=$const26.8.1, fn=<built-in function getitem>) ['$28binary_subscr.9', '$const26.8.1', 'x']
+    $const34.11.3 = const(int, 1)            ['$const34.11.3']
+    $36binary_subscr.12 = getitem(value=x, index=$const34.11.3, fn=<built-in function getitem>) ['$36binary_subscr.12', '$const34.11.3', 'x']
+    $40compare_op.13 = $28binary_subscr.9 >= $36binary_subscr.12 ['$28binary_subscr.9', '$36binary_subscr.12', '$40compare_op.13']
+    $binop_and_44.14 = $20compare_op.6 & $40compare_op.13 ['$20compare_op.6', '$40compare_op.13', '$binop_and_44.14']
+    $48return_value.15 = cast(value=$binop_and_44.14) ['$48return_value.15', '$binop_and_44.14']
+    return $48return_value.15                ['$48return_value.15']
+
+2025-03-15 11:20:08,519 - DEBUG - bytecode dump:
+>          0	NOP(arg=None, lineno=1045)
+           2	RESUME(arg=0, lineno=1045)
+           4	LOAD_FAST(arg=0, lineno=1048)
+           6	LOAD_CONST(arg=1, lineno=1048)
+           8	BINARY_SUBSCR(arg=None, lineno=1048)
+          12	LOAD_FAST(arg=0, lineno=1048)
+          14	LOAD_CONST(arg=2, lineno=1048)
+          16	BINARY_SUBSCR(arg=None, lineno=1048)
+          20	COMPARE_OP(arg=2, lineno=1048)
+          24	LOAD_FAST(arg=0, lineno=1048)
+          26	LOAD_CONST(arg=1, lineno=1048)
+          28	BINARY_SUBSCR(arg=None, lineno=1048)
+          32	LOAD_FAST(arg=0, lineno=1048)
+          34	LOAD_CONST(arg=3, lineno=1048)
+          36	BINARY_SUBSCR(arg=None, lineno=1048)
+          40	COMPARE_OP(arg=26, lineno=1048)
+          44	BINARY_OP(arg=1, lineno=1048)
+          48	RETURN_VALUE(arg=None, lineno=1048)
+2025-03-15 11:20:08,519 - DEBUG - pending: deque([State(pc_initial=0 nstack_initial=0)])
+2025-03-15 11:20:08,519 - DEBUG - stack: []
+2025-03-15 11:20:08,519 - DEBUG - state.pc_initial: State(pc_initial=0 nstack_initial=0)
+2025-03-15 11:20:08,519 - DEBUG - dispatch pc=0, inst=NOP(arg=None, lineno=1045)
+2025-03-15 11:20:08,519 - DEBUG - stack []
+2025-03-15 11:20:08,519 - DEBUG - dispatch pc=2, inst=RESUME(arg=0, lineno=1045)
+2025-03-15 11:20:08,519 - DEBUG - stack []
+2025-03-15 11:20:08,519 - DEBUG - dispatch pc=4, inst=LOAD_FAST(arg=0, lineno=1048)
+2025-03-15 11:20:08,519 - DEBUG - stack []
+2025-03-15 11:20:08,519 - DEBUG - dispatch pc=6, inst=LOAD_CONST(arg=1, lineno=1048)
+2025-03-15 11:20:08,519 - DEBUG - stack ['$x4.0']
+2025-03-15 11:20:08,519 - DEBUG - dispatch pc=8, inst=BINARY_SUBSCR(arg=None, lineno=1048)
+2025-03-15 11:20:08,519 - DEBUG - stack ['$x4.0', '$const6.1.1']
+2025-03-15 11:20:08,519 - DEBUG - dispatch pc=12, inst=LOAD_FAST(arg=0, lineno=1048)
+2025-03-15 11:20:08,519 - DEBUG - stack ['$8binary_subscr.2']
+2025-03-15 11:20:08,519 - DEBUG - dispatch pc=14, inst=LOAD_CONST(arg=2, lineno=1048)
+2025-03-15 11:20:08,519 - DEBUG - stack ['$8binary_subscr.2', '$x12.3']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=16, inst=BINARY_SUBSCR(arg=None, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$8binary_subscr.2', '$x12.3', '$const14.4.2']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=20, inst=COMPARE_OP(arg=2, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$8binary_subscr.2', '$16binary_subscr.5']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=24, inst=LOAD_FAST(arg=0, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$20compare_op.6']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=26, inst=LOAD_CONST(arg=1, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$20compare_op.6', '$x24.7']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=28, inst=BINARY_SUBSCR(arg=None, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$20compare_op.6', '$x24.7', '$const26.8.1']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=32, inst=LOAD_FAST(arg=0, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$20compare_op.6', '$28binary_subscr.9']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=34, inst=LOAD_CONST(arg=3, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$20compare_op.6', '$28binary_subscr.9', '$x32.10']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=36, inst=BINARY_SUBSCR(arg=None, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$20compare_op.6', '$28binary_subscr.9', '$x32.10', '$const34.11.3']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=40, inst=COMPARE_OP(arg=26, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$20compare_op.6', '$28binary_subscr.9', '$36binary_subscr.12']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=44, inst=BINARY_OP(arg=1, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$20compare_op.6', '$40compare_op.13']
+2025-03-15 11:20:08,520 - DEBUG - dispatch pc=48, inst=RETURN_VALUE(arg=None, lineno=1048)
+2025-03-15 11:20:08,520 - DEBUG - stack ['$binop_and_44.14']
+2025-03-15 11:20:08,520 - DEBUG - end state. edges=[]
+2025-03-15 11:20:08,520 - DEBUG - -------------------------Prune PHIs-------------------------
+2025-03-15 11:20:08,520 - DEBUG - Used_phis: defaultdict(<class 'set'>, {State(pc_initial=0 nstack_initial=0): set()})
+2025-03-15 11:20:08,520 - DEBUG - defmap: {}
+2025-03-15 11:20:08,520 - DEBUG - phismap: defaultdict(<class 'set'>, {})
+2025-03-15 11:20:08,520 - DEBUG - changing phismap: defaultdict(<class 'set'>, {})
+2025-03-15 11:20:08,521 - DEBUG - keep phismap: {}
+2025-03-15 11:20:08,521 - DEBUG - new_out: defaultdict(<class 'dict'>, {})
+2025-03-15 11:20:08,521 - DEBUG - ----------------------DONE Prune PHIs-----------------------
+2025-03-15 11:20:08,521 - DEBUG - block_infos State(pc_initial=0 nstack_initial=0):
+AdaptBlockInfo(insts=((0, {}), (2, {}), (4, {'res': '$x4.0'}), (6, {'res': '$const6.1.1'}), (8, {'index': '$const6.1.1', 'target': '$x4.0', 'res': '$8binary_subscr.2'}), (12, {'res': '$x12.3'}), (14, {'res': '$const14.4.2'}), (16, {'index': '$const14.4.2', 'target': '$x12.3', 'res': '$16binary_subscr.5'}), (20, {'lhs': '$8binary_subscr.2', 'rhs': '$16binary_subscr.5', 'res': '$20compare_op.6'}), (24, {'res': '$x24.7'}), (26, {'res': '$const26.8.1'}), (28, {'index': '$const26.8.1', 'target': '$x24.7', 'res': '$28binary_subscr.9'}), (32, {'res': '$x32.10'}), (34, {'res': '$const34.11.3'}), (36, {'index': '$const34.11.3', 'target': '$x32.10', 'res': '$36binary_subscr.12'}), (40, {'lhs': '$28binary_subscr.9', 'rhs': '$36binary_subscr.12', 'res': '$40compare_op.13'}), (44, {'op': '&', 'lhs': '$20compare_op.6', 'rhs': '$40compare_op.13', 'res': '$binop_and_44.14'}), (48, {'retval': '$binop_and_44.14', 'castval': '$48return_value.15'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={})
+2025-03-15 11:20:08,521 - DEBUG - label 0:
+    x = arg(0, name=x)                       ['x']
+    $const6.1.1 = const(int, 0)              ['$const6.1.1']
+    $8binary_subscr.2 = getitem(value=x, index=$const6.1.1, fn=<built-in function getitem>) ['$8binary_subscr.2', '$const6.1.1', 'x']
+    $const14.4.2 = const(int, -1)            ['$const14.4.2']
+    $16binary_subscr.5 = getitem(value=x, index=$const14.4.2, fn=<built-in function getitem>) ['$16binary_subscr.5', '$const14.4.2', 'x']
+    $20compare_op.6 = $8binary_subscr.2 < $16binary_subscr.5 ['$16binary_subscr.5', '$20compare_op.6', '$8binary_subscr.2']
+    $const26.8.1 = const(int, 0)             ['$const26.8.1']
+    $28binary_subscr.9 = getitem(value=x, index=$const26.8.1, fn=<built-in function getitem>) ['$28binary_subscr.9', '$const26.8.1', 'x']
+    $const34.11.3 = const(int, 1)            ['$const34.11.3']
+    $36binary_subscr.12 = getitem(value=x, index=$const34.11.3, fn=<built-in function getitem>) ['$36binary_subscr.12', '$const34.11.3', 'x']
+    $40compare_op.13 = $28binary_subscr.9 <= $36binary_subscr.12 ['$28binary_subscr.9', '$36binary_subscr.12', '$40compare_op.13']
+    $binop_and_44.14 = $20compare_op.6 & $40compare_op.13 ['$20compare_op.6', '$40compare_op.13', '$binop_and_44.14']
+    $48return_value.15 = cast(value=$binop_and_44.14) ['$48return_value.15', '$binop_and_44.14']
+    return $48return_value.15                ['$48return_value.15']
+
+2025-03-15 11:20:09,204 - DEBUG - bytecode dump:
+>          0	NOP(arg=None, lineno=425)
+           2	RESUME(arg=0, lineno=425)
+           4	LOAD_FAST(arg=0, lineno=428)
+           6	LOAD_CONST(arg=1, lineno=428)
+           8	BINARY_SUBSCR(arg=None, lineno=428)
+          12	LOAD_FAST(arg=0, lineno=428)
+          14	LOAD_CONST(arg=2, lineno=428)
+          16	BINARY_SUBSCR(arg=None, lineno=428)
+          20	BINARY_OP(arg=0, lineno=428)
+          24	LOAD_CONST(arg=3, lineno=428)
+          26	LOAD_FAST(arg=0, lineno=428)
+          28	LOAD_CONST(arg=4, lineno=428)
+          30	BINARY_SUBSCR(arg=None, lineno=428)
+          34	BINARY_OP(arg=5, lineno=428)
+          38	BINARY_OP(arg=10, lineno=428)
+          42	STORE_FAST(arg=1, lineno=428)
+          44	LOAD_FAST(arg=0, lineno=429)
+          46	LOAD_CONST(arg=1, lineno=429)
+          48	BINARY_SUBSCR(arg=None, lineno=429)
+          52	LOAD_FAST(arg=0, lineno=429)
+          54	LOAD_CONST(arg=2, lineno=429)
+          56	BINARY_SUBSCR(arg=None, lineno=429)
+          60	BINARY_OP(arg=10, lineno=429)
+          64	LOAD_CONST(arg=3, lineno=429)
+          66	BINARY_OP(arg=11, lineno=429)
+          70	STORE_FAST(arg=2, lineno=429)
+          72	LOAD_GLOBAL(arg=1, lineno=431)
+          82	LOAD_ATTR(arg=2, lineno=431)
+         102	LOAD_FAST(arg=2, lineno=431)
+         104	CALL(arg=1, lineno=431)
+         112	LOAD_GLOBAL(arg=1, lineno=431)
+         122	LOAD_ATTR(arg=2, lineno=431)
+         142	LOAD_FAST(arg=1, lineno=431)
+         144	CALL(arg=1, lineno=431)
+         152	COMPARE_OP(arg=92, lineno=431)
+         156	POP_JUMP_IF_FALSE(arg=1, lineno=431)
+         158	RETURN_CONST(arg=4, lineno=434)
+>        160	LOAD_FAST(arg=2, lineno=436)
+         162	UNARY_NEGATIVE(arg=None, lineno=436)
+         164	LOAD_FAST(arg=1, lineno=436)
+         166	BINARY_OP(arg=11, lineno=436)
+         170	RETURN_VALUE(arg=None, lineno=436)
+2025-03-15 11:20:09,204 - DEBUG - pending: deque([State(pc_initial=0 nstack_initial=0)])
+2025-03-15 11:20:09,204 - DEBUG - stack: []
+2025-03-15 11:20:09,204 - DEBUG - state.pc_initial: State(pc_initial=0 nstack_initial=0)
+2025-03-15 11:20:09,204 - DEBUG - dispatch pc=0, inst=NOP(arg=None, lineno=425)
+2025-03-15 11:20:09,204 - DEBUG - stack []
+2025-03-15 11:20:09,204 - DEBUG - dispatch pc=2, inst=RESUME(arg=0, lineno=425)
+2025-03-15 11:20:09,204 - DEBUG - stack []
+2025-03-15 11:20:09,204 - DEBUG - dispatch pc=4, inst=LOAD_FAST(arg=0, lineno=428)
+2025-03-15 11:20:09,204 - DEBUG - stack []
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=6, inst=LOAD_CONST(arg=1, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$x4.0']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=8, inst=BINARY_SUBSCR(arg=None, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$x4.0', '$const6.1.1']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=12, inst=LOAD_FAST(arg=0, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$8binary_subscr.2']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=14, inst=LOAD_CONST(arg=2, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$8binary_subscr.2', '$x12.3']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=16, inst=BINARY_SUBSCR(arg=None, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$8binary_subscr.2', '$x12.3', '$const14.4.2']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=20, inst=BINARY_OP(arg=0, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$8binary_subscr.2', '$16binary_subscr.5']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=24, inst=LOAD_CONST(arg=3, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$binop_add20.6']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=26, inst=LOAD_FAST(arg=0, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$binop_add20.6', '$const24.7.3']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=28, inst=LOAD_CONST(arg=4, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$binop_add20.6', '$const24.7.3', '$x26.8']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=30, inst=BINARY_SUBSCR(arg=None, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$binop_add20.6', '$const24.7.3', '$x26.8', '$const28.9.4']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=34, inst=BINARY_OP(arg=5, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$binop_add20.6', '$const24.7.3', '$30binary_subscr.10']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=38, inst=BINARY_OP(arg=10, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$binop_add20.6', '$binop_mul34.11']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=42, inst=STORE_FAST(arg=1, lineno=428)
+2025-03-15 11:20:09,205 - DEBUG - stack ['$binop_sub38.12']
+2025-03-15 11:20:09,205 - DEBUG - dispatch pc=44, inst=LOAD_FAST(arg=0, lineno=429)
+2025-03-15 11:20:09,205 - DEBUG - stack []
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=46, inst=LOAD_CONST(arg=1, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$x44.13']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=48, inst=BINARY_SUBSCR(arg=None, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$x44.13', '$const46.14.1']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=52, inst=LOAD_FAST(arg=0, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$48binary_subscr.15']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=54, inst=LOAD_CONST(arg=2, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$48binary_subscr.15', '$x52.16']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=56, inst=BINARY_SUBSCR(arg=None, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$48binary_subscr.15', '$x52.16', '$const54.17.2']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=60, inst=BINARY_OP(arg=10, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$48binary_subscr.15', '$56binary_subscr.18']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=64, inst=LOAD_CONST(arg=3, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$binop_sub60.19']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=66, inst=BINARY_OP(arg=11, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$binop_sub60.19', '$const64.20.3']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=70, inst=STORE_FAST(arg=2, lineno=429)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$binop_truediv66.21']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=72, inst=LOAD_GLOBAL(arg=1, lineno=431)
+2025-03-15 11:20:09,206 - DEBUG - stack []
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=82, inst=LOAD_ATTR(arg=2, lineno=431)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$null$72.23', '$72load_global.22']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=102, inst=LOAD_FAST(arg=2, lineno=431)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$null$72.23', '$82load_attr.24']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=104, inst=CALL(arg=1, lineno=431)
+2025-03-15 11:20:09,206 - DEBUG - stack ['$null$72.23', '$82load_attr.24', '$b102.25']
+2025-03-15 11:20:09,206 - DEBUG - dispatch pc=112, inst=LOAD_GLOBAL(arg=1, lineno=431)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$104call.26']
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=122, inst=LOAD_ATTR(arg=2, lineno=431)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$104call.26', '$null$112.28', '$112load_global.27']
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=142, inst=LOAD_FAST(arg=1, lineno=431)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$104call.26', '$null$112.28', '$122load_attr.29']
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=144, inst=CALL(arg=1, lineno=431)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$104call.26', '$null$112.28', '$122load_attr.29', '$a142.30']
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=152, inst=COMPARE_OP(arg=92, lineno=431)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$104call.26', '$144call.31']
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=156, inst=POP_JUMP_IF_FALSE(arg=1, lineno=431)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$152compare_op.32']
+2025-03-15 11:20:09,207 - DEBUG - end state. edges=[Edge(pc=158, stack=(), blockstack=(), npush=0), Edge(pc=160, stack=(), blockstack=(), npush=0)]
+2025-03-15 11:20:09,207 - DEBUG - pending: deque([State(pc_initial=158 nstack_initial=0), State(pc_initial=160 nstack_initial=0)])
+2025-03-15 11:20:09,207 - DEBUG - stack: []
+2025-03-15 11:20:09,207 - DEBUG - state.pc_initial: State(pc_initial=158 nstack_initial=0)
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=158, inst=RETURN_CONST(arg=4, lineno=434)
+2025-03-15 11:20:09,207 - DEBUG - stack []
+2025-03-15 11:20:09,207 - DEBUG - end state. edges=[]
+2025-03-15 11:20:09,207 - DEBUG - pending: deque([State(pc_initial=160 nstack_initial=0)])
+2025-03-15 11:20:09,207 - DEBUG - stack: []
+2025-03-15 11:20:09,207 - DEBUG - state.pc_initial: State(pc_initial=160 nstack_initial=0)
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=160, inst=LOAD_FAST(arg=2, lineno=436)
+2025-03-15 11:20:09,207 - DEBUG - stack []
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=162, inst=UNARY_NEGATIVE(arg=None, lineno=436)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$b160.0']
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=164, inst=LOAD_FAST(arg=1, lineno=436)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$162unary_negative.1']
+2025-03-15 11:20:09,207 - DEBUG - dispatch pc=166, inst=BINARY_OP(arg=11, lineno=436)
+2025-03-15 11:20:09,207 - DEBUG - stack ['$162unary_negative.1', '$a164.2']
+2025-03-15 11:20:09,208 - DEBUG - dispatch pc=170, inst=RETURN_VALUE(arg=None, lineno=436)
+2025-03-15 11:20:09,208 - DEBUG - stack ['$binop_truediv166.3']
+2025-03-15 11:20:09,208 - DEBUG - end state. edges=[]
+2025-03-15 11:20:09,208 - DEBUG - -------------------------Prune PHIs-------------------------
+2025-03-15 11:20:09,208 - DEBUG - Used_phis: defaultdict(<class 'set'>,
+            {State(pc_initial=0 nstack_initial=0): set(),
+             State(pc_initial=158 nstack_initial=0): set(),
+             State(pc_initial=160 nstack_initial=0): set()})
+2025-03-15 11:20:09,208 - DEBUG - defmap: {}
+2025-03-15 11:20:09,208 - DEBUG - phismap: defaultdict(<class 'set'>, {})
+2025-03-15 11:20:09,208 - DEBUG - changing phismap: defaultdict(<class 'set'>, {})
+2025-03-15 11:20:09,208 - DEBUG - keep phismap: {}
+2025-03-15 11:20:09,208 - DEBUG - new_out: defaultdict(<class 'dict'>, {})
+2025-03-15 11:20:09,208 - DEBUG - ----------------------DONE Prune PHIs-----------------------
+2025-03-15 11:20:09,208 - DEBUG - block_infos State(pc_initial=0 nstack_initial=0):
+AdaptBlockInfo(insts=((0, {}), (2, {}), (4, {'res': '$x4.0'}), (6, {'res': '$const6.1.1'}), (8, {'index': '$const6.1.1', 'target': '$x4.0', 'res': '$8binary_subscr.2'}), (12, {'res': '$x12.3'}), (14, {'res': '$const14.4.2'}), (16, {'index': '$const14.4.2', 'target': '$x12.3', 'res': '$16binary_subscr.5'}), (20, {'op': '+', 'lhs': '$8binary_subscr.2', 'rhs': '$16binary_subscr.5', 'res': '$binop_add20.6'}), (24, {'res': '$const24.7.3'}), (26, {'res': '$x26.8'}), (28, {'res': '$const28.9.4'}), (30, {'index': '$const28.9.4', 'target': '$x26.8', 'res': '$30binary_subscr.10'}), (34, {'op': '*', 'lhs': '$const24.7.3', 'rhs': '$30binary_subscr.10', 'res': '$binop_mul34.11'}), (38, {'op': '-', 'lhs': '$binop_add20.6', 'rhs': '$binop_mul34.11', 'res': '$binop_sub38.12'}), (42, {'value': '$binop_sub38.12'}), (44, {'res': '$x44.13'}), (46, {'res': '$const46.14.1'}), (48, {'index': '$const46.14.1', 'target': '$x44.13', 'res': '$48binary_subscr.15'}), (52, {'res': '$x52.16'}), (54, {'res': '$const54.17.2'}), (56, {'index': '$const54.17.2', 'target': '$x52.16', 'res': '$56binary_subscr.18'}), (60, {'op': '-', 'lhs': '$48binary_subscr.15', 'rhs': '$56binary_subscr.18', 'res': '$binop_sub60.19'}), (64, {'res': '$const64.20.3'}), (66, {'op': '/', 'lhs': '$binop_sub60.19', 'rhs': '$const64.20.3', 'res': '$binop_truediv66.21'}), (70, {'value': '$binop_truediv66.21'}), (72, {'idx': 0, 'res': '$72load_global.22'}), (82, {'item': '$72load_global.22', 'res': '$82load_attr.24'}), (102, {'res': '$b102.25'}), (104, {'func': '$82load_attr.24', 'args': ['$b102.25'], 'kw_names': None, 'res': '$104call.26'}), (112, {'idx': 0, 'res': '$112load_global.27'}), (122, {'item': '$112load_global.27', 'res': '$122load_attr.29'}), (142, {'res': '$a142.30'}), (144, {'func': '$122load_attr.29', 'args': ['$a142.30'], 'kw_names': None, 'res': '$144call.31'}), (152, {'lhs': '$104call.26', 'rhs': '$144call.31', 'res': '$152compare_op.32'}), (156, {'pred': '$152compare_op.32'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={158: (), 160: ()})
+2025-03-15 11:20:09,208 - DEBUG - block_infos State(pc_initial=158 nstack_initial=0):
+AdaptBlockInfo(insts=((158, {'retval': '$const158.0', 'castval': '$158return_const.1'}),), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={})
+2025-03-15 11:20:09,208 - DEBUG - block_infos State(pc_initial=160 nstack_initial=0):
+AdaptBlockInfo(insts=((160, {'res': '$b160.0'}), (162, {'value': '$b160.0', 'res': '$162unary_negative.1'}), (164, {'res': '$a164.2'}), (166, {'op': '/', 'lhs': '$162unary_negative.1', 'rhs': '$a164.2', 'res': '$binop_truediv166.3'}), (170, {'retval': '$binop_truediv166.3', 'castval': '$170return_value.4'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={})
+2025-03-15 11:20:09,209 - DEBUG - label 0:
+    x = arg(0, name=x)                       ['x']
+    $const6.1.1 = const(int, 1)              ['$const6.1.1']
+    $8binary_subscr.2 = getitem(value=x, index=$const6.1.1, fn=<built-in function getitem>) ['$8binary_subscr.2', '$const6.1.1', 'x']
+    $const14.4.2 = const(int, -1)            ['$const14.4.2']
+    $16binary_subscr.5 = getitem(value=x, index=$const14.4.2, fn=<built-in function getitem>) ['$16binary_subscr.5', '$const14.4.2', 'x']
+    $binop_add20.6 = $8binary_subscr.2 + $16binary_subscr.5 ['$16binary_subscr.5', '$8binary_subscr.2', '$binop_add20.6']
+    $const24.7.3 = const(int, 2)             ['$const24.7.3']
+    $const28.9.4 = const(int, 0)             ['$const28.9.4']
+    $30binary_subscr.10 = getitem(value=x, index=$const28.9.4, fn=<built-in function getitem>) ['$30binary_subscr.10', '$const28.9.4', 'x']
+    $binop_mul34.11 = $const24.7.3 * $30binary_subscr.10 ['$30binary_subscr.10', '$binop_mul34.11', '$const24.7.3']
+    a = $binop_add20.6 - $binop_mul34.11     ['$binop_add20.6', '$binop_mul34.11', 'a']
+    $const46.14.1 = const(int, 1)            ['$const46.14.1']
+    $48binary_subscr.15 = getitem(value=x, index=$const46.14.1, fn=<built-in function getitem>) ['$48binary_subscr.15', '$const46.14.1', 'x']
+    $const54.17.2 = const(int, -1)           ['$const54.17.2']
+    $56binary_subscr.18 = getitem(value=x, index=$const54.17.2, fn=<built-in function getitem>) ['$56binary_subscr.18', '$const54.17.2', 'x']
+    $binop_sub60.19 = $48binary_subscr.15 - $56binary_subscr.18 ['$48binary_subscr.15', '$56binary_subscr.18', '$binop_sub60.19']
+    $const64.20.3 = const(int, 2)            ['$const64.20.3']
+    b = $binop_sub60.19 / $const64.20.3      ['$binop_sub60.19', '$const64.20.3', 'b']
+    $72load_global.22 = global(np: <module 'numpy' from 'C:\\Users\\Kasparas\\argos_tts\\Main_RVC\\u-rvc_GcolabCp\\venv\\Lib\\site-packages\\numpy\\__init__.py'>) ['$72load_global.22']
+    $82load_attr.24 = getattr(value=$72load_global.22, attr=abs) ['$72load_global.22', '$82load_attr.24']
+    $104call.26 = call $82load_attr.24(b, func=$82load_attr.24, args=[Var(b, pitch.py:429)], kws=(), vararg=None, varkwarg=None, target=None) ['$104call.26', '$82load_attr.24', 'b']
+    $112load_global.27 = global(np: <module 'numpy' from 'C:\\Users\\Kasparas\\argos_tts\\Main_RVC\\u-rvc_GcolabCp\\venv\\Lib\\site-packages\\numpy\\__init__.py'>) ['$112load_global.27']
+    $122load_attr.29 = getattr(value=$112load_global.27, attr=abs) ['$112load_global.27', '$122load_attr.29']
+    $144call.31 = call $122load_attr.29(a, func=$122load_attr.29, args=[Var(a, pitch.py:428)], kws=(), vararg=None, varkwarg=None, target=None) ['$122load_attr.29', '$144call.31', 'a']
+    $152compare_op.32 = $104call.26 >= $144call.31 ['$104call.26', '$144call.31', '$152compare_op.32']
+    bool156 = global(bool: <class 'bool'>)   ['bool156']
+    $156pred = call bool156($152compare_op.32, func=bool156, args=(Var($152compare_op.32, pitch.py:431),), kws=(), vararg=None, varkwarg=None, target=None) ['$152compare_op.32', '$156pred', 'bool156']
+    branch $156pred, 158, 160                ['$156pred']
+label 158:
+    $const158.0 = const(int, 0)              ['$const158.0']
+    $158return_const.1 = cast(value=$const158.0) ['$158return_const.1', '$const158.0']
+    return $158return_const.1                ['$158return_const.1']
+label 160:
+    $162unary_negative.1 = unary(fn=<built-in function neg>, value=b) ['$162unary_negative.1', 'b']
+    $binop_truediv166.3 = $162unary_negative.1 / a ['$162unary_negative.1', '$binop_truediv166.3', 'a']
+    $170return_value.4 = cast(value=$binop_truediv166.3) ['$170return_value.4', '$binop_truediv166.3']
+    return $170return_value.4                ['$170return_value.4']
+
+2025-03-15 11:20:09,306 - INFO - Audio split into 1 chunks for processing.
+2025-03-15 11:20:09,307 - INFO - Processing chunk 0 with shape: (72000,)
+2025-03-15 11:20:09,308 - DEBUG - vc attribute: <ultimate_rvc.rvc.infer.pipeline.Pipeline object at 0x00000173EEBA9A60>
+2025-03-15 11:20:09,308 - INFO - Starting full voice conversion pipeline.
+2025-03-15 11:20:09,405 - DEBUG - FAISS index loaded, index.ntotal=22813
+2025-03-15 11:20:09,407 - DEBUG - Applied high-pass filtering to audio.
+2025-03-15 11:20:09,407 - DEBUG - Padded audio, new shape: (72160,)
+2025-03-15 11:20:09,408 - INFO - Estimating F0 for input: input_audio_path
+2025-03-15 11:20:09,408 - INFO - Calculating F0 with hybrid methods: rmvpe
+2025-03-15 11:20:09,409 - INFO - Calculating f0 pitch estimations for methods: rmvpe
+2025-03-15 11:20:10,160 - DEBUG - Hybrid F0 computed with shape: (650,)
+2025-03-15 11:20:10,160 - DEBUG - Applying autotune to F0.
+2025-03-15 11:20:10,160 - DEBUG - Autotuning F0 with strength 1.000
+2025-03-15 11:20:10,172 - DEBUG - F0 estimation complete: coarse shape (650,), original shape (650,)
+2025-03-15 11:20:10,173 - DEBUG - Pitch guidance obtained, pitch shape: torch.Size([1, 650]), pitchf shape: torch.Size([1, 650])
+2025-03-15 11:20:10,173 - INFO - Pipeline.voice_conversion: Starting voice conversion segment.
+2025-03-15 11:20:10,175 - DEBUG - voice_conversion: Input features: shape=torch.Size([1, 104000]), min=-0.3778, max=0.3199, mean=-0.0000, std=0.0777
+2025-03-15 11:20:11,143 - DEBUG - voice_conversion: Features after model extraction: shape=torch.Size([1, 324, 768]), min=-3.9351, max=3.5328, mean=-0.0093, std=0.3419
+2025-03-15 11:20:11,144 - DEBUG - Retrieving speaker embeddings from FAISS index...
+2025-03-15 11:20:11,185 - DEBUG - Speaker embeddings retrieved, feats shape now: torch.Size([1, 324, 768])
+2025-03-15 11:20:11,187 - DEBUG - voice_conversion: Features after speaker embedding retrieval: shape=torch.Size([1, 324, 768]), min=-3.5696, max=3.3010, mean=-0.0090, std=0.2903
+2025-03-15 11:20:11,189 - DEBUG - voice_conversion: Features after upsampling: shape=torch.Size([1, 648, 768]), min=-3.5696, max=3.3010, mean=-0.0090, std=0.2903
+2025-03-15 11:20:11,189 - DEBUG - voice_conversion: p_len determined as 648
+2025-03-15 11:20:11,192 - DEBUG - voice_conversion: Features after pitch protection: shape=torch.Size([1, 648, 768]), min=-3.5696, max=3.3010, mean=-0.0090, std=0.2903
+2025-03-15 11:20:11,192 - DEBUG - voice_conversion: Calling net_g.infer with p_len=tensor([648])
+2025-03-15 11:20:11,195 - DEBUG - Synthesizer.infer: phone shape: torch.Size([1, 648, 768]), phone_lengths: tensor([648])
+2025-03-15 11:20:11,195 - DEBUG - infer: Speaker embedding (g): shape=torch.Size([1, 256, 1]), min=-1.5557, max=1.4766, mean=-0.0007, std=0.5664
+2025-03-15 11:20:11,416 - DEBUG - infer: m_p: shape=torch.Size([1, 192, 648]), min=-3.2895, max=2.4260, mean=0.0026, std=0.2604
+2025-03-15 11:20:11,417 - DEBUG - infer: logs_p: shape=torch.Size([1, 192, 648]), min=-2.1394, max=2.9642, mean=-1.0892, std=0.3627
+2025-03-15 11:20:11,417 - DEBUG - infer: x_mask: shape=torch.Size([1, 1, 648]), min=1.0000, max=1.0000, mean=1.0000, std=0.0000
+2025-03-15 11:20:11,419 - DEBUG - infer: z_p: shape=torch.Size([1, 192, 648]), min=-30.8195, max=22.2131, mean=0.0008, std=0.6497
+2025-03-15 11:20:11,574 - DEBUG - infer: Flow reverse output (z): shape=torch.Size([1, 192, 648]), min=-30.1717, max=21.3234, mean=-0.0001, std=0.8361
+2025-03-15 11:20:18,888 - DEBUG - infer: Decoder output (o): shape=torch.Size([1, 1, 259200]), min=-0.7312, max=0.6406, mean=-0.0004, std=0.0665
+2025-03-15 11:20:18,889 - DEBUG - voice_conversion: Output audio segment: shape=torch.Size([259200]), min=-0.7312, max=0.6406, mean=-0.0004, std=0.0665
+2025-03-15 11:20:18,889 - INFO - Pipeline.voice_conversion: Segment conversion complete, output shape: (259200,)
+2025-03-15 11:20:18,890 - INFO - Concatenated output audio shape: (179200,)
+2025-03-15 11:20:18,892 - INFO - Pipeline processing complete.
+2025-03-15 11:20:18,907 - INFO - Chunk 0 conversion complete. Output shape: (179200,)
+2025-03-15 11:20:18,908 - INFO - Converted audio chunk 1
+2025-03-15 11:20:18,909 - INFO - Post-processing audio...
+2025-03-15 11:20:18,911 - INFO - Post-processing complete.
+2025-03-15 11:20:18,917 - INFO - Output audio written to: C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\21_Speech_Converted_d4e2ac75a4.wav
+2025-03-15 11:20:18,918 - INFO - Conversion completed at 'C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\21_Speech_Converted_d4e2ac75a4.wav' in 11.20 seconds.
