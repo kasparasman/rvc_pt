@@ -519,6 +519,8 @@ class VoiceConverter:
             weight_root (str): Path to the model weights.
 
         """
+        self.device = self.config.device  # or torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
         self.cpt = (
             torch.load(weight_root, map_location=self.device, weights_only=False)
             if os.path.isfile(weight_root)
