@@ -20,6 +20,11 @@ def download_and_setup_models():
         contentvec_dir = infer_dir / "contentvec"
         zip_path = infer_dir / "contentvec.zip"
 
+        # If contentvec already exists but is a file, delete it
+        if contentvec_dir.exists() and not contentvec_dir.is_dir():
+            print("Removing incorrect contentvec file...")
+            contentvec_dir.unlink()  # Remove the file
+
         # Download and extract only if the contentvec directory is missing
         if not contentvec_dir.exists():
             print("Downloading ContentVec model...")
@@ -27,16 +32,21 @@ def download_and_setup_models():
 
             print("\nExtracting ContentVec model...")
             with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+                extracted_names = zip_ref.namelist()
                 zip_ref.extractall(infer_dir)
 
-            # Ensure correct naming of extracted directory
-            extracted_dirs = list(infer_dir.glob('*contentvec*'))
-            if extracted_dirs:
-                extracted_dir = extracted_dirs[0]  # Assume the first match
-                if extracted_dir != contentvec_dir:
-                    shutil.move(str(extracted_dir), str(contentvec_dir))
+            # If a single file was extracted instead of a folder, move it into a new folder
+            extracted_items = list(infer_dir.glob("*"))
+            extracted_dirs = [item for item in extracted_items if item.is_dir()]
+            
+            if len(extracted_dirs) == 0:  # No folders extracted
+                # Assume single extracted file needs to be placed inside `contentvec`
+                contentvec_dir.mkdir(exist_ok=True)
+                for extracted_file in extracted_items:
+                    if extracted_file.is_file() and extracted_file.name != "contentvec.zip":
+                        shutil.move(str(extracted_file), str(contentvec_dir / extracted_file.name))
 
-            # Remove zip file
+            # Remove zip file after extraction
             zip_path.unlink()
 
             print("ContentVec model setup complete.")
