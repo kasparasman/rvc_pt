@@ -19,7 +19,7 @@ from transformers import HubertModel
 import librosa
 import soundfile as sf
 
-from ultimate_rvc.common import RVC_MODELS_DIR
+from ultimate_rvc.common import BASE_DIR
 
 # Remove this to see warnings about transformers models
 warnings.filterwarnings("ignore")
@@ -110,7 +110,7 @@ def load_embedding(embedder_model, custom_embedder=None):
     
     # If embedder_model is "contentvec", use the custom folder path.
     if embedder_model.lower() == "contentvec":
-        model_path = os.path.join(RVC_MODELS_DIR, "models", "rvc", "embedders", "contentvec") if custom_embedder is None else custom_embedder
+        model_path = os.path.join(BASE_DIR, "rvc", "infer", "models", "rvc", "embedders", "contentvec") if custom_embedder is None else custom_embedder
     else:
         raise ValueError(f"Embedder model '{embedder_model}' not supported. Only 'contentvec' is supported.")
     
