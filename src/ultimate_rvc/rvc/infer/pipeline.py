@@ -481,7 +481,7 @@ class Pipeline:
             
             p_len = torch.tensor([p_len], device=self.device).long()
             logger.debug("voice_conversion: Calling net_g.infer with p_len=%s", p_len)
-            audio1 = (net_g.infer(feats.floZXat(), p_len, pitch, pitchf.float() if pitchf is not None else None, sid)[0][0, 0]).data.cpu().float().numpy()
+            audio1 = (net_g.infer(feats.float(), p_len, pitch, pitchf.float() if pitchf is not None else None, sid)[0][0, 0]).data.cpu().float().numpy()
             debug_tensor("voice_conversion: Output audio segment", torch.from_numpy(audio1))
             
             logger.info("Pipeline.voice_conversion: Segment conversion complete, output shape: %s", audio1.shape)
