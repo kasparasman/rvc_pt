@@ -22,7 +22,7 @@ def singleton(cls):
 
     return get_instance
 
-config_pathvar = "C:\\Users\\Kasparas\\argos_tts\\Main_RVC\\u-rvc_GcolabCp\\src\\ultimate_rvc\\rvc\\configs"
+config_pathvar = "./"
 @singleton
 class Config:
     def __init__(self):

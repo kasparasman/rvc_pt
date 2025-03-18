@@ -60,7 +60,7 @@ def run_inference(
     # Here, model_name is used as an identifier for the voice model.
     # Make sure that model_name corresponds to a directory or identifier expected by validate_model_exists.
     model_name = "argos"
-    model_path = "C:\\Users\\Kasparas\\argos_tts\\Main_RVC\\u-rvc_GcolabCp\\src\\ultimate_rvc\\rvc\\infer\\argos.pth"
+    model_path = "./models/argos/argos.pth"
     print("Model exists:", model_path, "name:", model_name)
     # Use the directory of the output_audio as the target directory
     output_dir = os.path.dirname(os.path.abspath(output_audio))
