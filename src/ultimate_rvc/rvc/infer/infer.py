@@ -491,6 +491,9 @@ class VoiceConverter:
             if self.cpt is not None:
                 self.setup_network()
                 self.setup_vc_instance()
+            else:
+                raise RuntimeError("Error: self.vc was not initialized before convert_audio(). Check model loading!")
+
             self.loaded_model = weight_root
 
     def cleanup_model(self):
