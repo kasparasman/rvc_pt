@@ -238,7 +238,7 @@ class Pipeline:
         self.note_dict = self.autotune.note_dict
         logger.info("Loading RMVPE model for F0 estimation...")
         self.model_rmvpe = RMVPE0Predictor(
-            os.path.join(str(RVC_MODELS_DIR), "predictors", "rmvpe.pt"),
+            os.path.join(str(RVC_MODELS_DIR), "predictor", "rmvpe.pt"),
             device=self.device,
         )
         logger.info("RMVPE model loaded.")
