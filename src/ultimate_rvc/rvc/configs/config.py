@@ -1,5 +1,7 @@
 import json
 import os
+from pathlib import Path
+script_dir = Path(__file__).parent
 
 import torch
 
@@ -22,7 +24,6 @@ def singleton(cls):
 
     return get_instance
 
-config_pathvar = "./"
 @singleton
 class Config:
     def __init__(self):
@@ -39,7 +40,7 @@ class Config:
     def load_config_json(self) -> dict:
         configs = {}
         for config_file in version_config_paths:
-            config_path = os.path.join(config_pathvar, config_file)
+            config_path = os.path.join(script_dir, config_file)
             with open(config_path) as f:
                 configs[config_file] = json.load(f)
         return configs
