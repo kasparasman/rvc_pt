@@ -12,7 +12,7 @@ from pathlib import Path
 if TYPE_CHECKING:
     from types import ModuleType
 
-BASE_DIR = Path.cwd()
+BASE_DIR = Path.cwd() / "ultimate_rvc"
 MODELS_DIR = Path(os.getenv("URVC_MODELS_DIR") or BASE_DIR / "models")
 RVC_MODELS_DIR = BASE_DIR / "rvc/infer/"
 VOICE_MODELS_DIR = r"C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer"
