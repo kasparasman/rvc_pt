@@ -19,32 +19,26 @@ def download_and_setup_models():
     try:
         contentvec_dir = infer_dir / "contentvec"
         zip_path = infer_dir / "contentvec.zip"
+        extracted_folder = infer_dir / "pytorch_model"  # The actual extracted folder name
 
-        # If contentvec already exists but is a file, delete it
+        # If contentvec exists as a file, remove it
         if contentvec_dir.exists() and not contentvec_dir.is_dir():
             print("Removing incorrect contentvec file...")
-            contentvec_dir.unlink()  # Remove the file
+            contentvec_dir.unlink()
 
-        # Download and extract only if the contentvec directory is missing
+        # Only download and extract if contentvec doesn't already exist
         if not contentvec_dir.exists():
             print("Downloading ContentVec model...")
             wget.download(contentvec_url, str(zip_path))
 
             print("\nExtracting ContentVec model...")
             with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-                extracted_names = zip_ref.namelist()
                 zip_ref.extractall(infer_dir)
 
-            # If a single file was extracted instead of a folder, move it into a new folder
-            extracted_items = list(infer_dir.glob("*"))
-            extracted_dirs = [item for item in extracted_items if item.is_dir()]
-            
-            if len(extracted_dirs) == 0:  # No folders extracted
-                # Assume single extracted file needs to be placed inside `contentvec`
-                contentvec_dir.mkdir(exist_ok=True)
-                for extracted_file in extracted_items:
-                    if extracted_file.is_file() and extracted_file.name != "contentvec.zip":
-                        shutil.move(str(extracted_file), str(contentvec_dir / extracted_file.name))
+            # Ensure the extracted folder exists
+            if extracted_folder.exists() and extracted_folder.is_dir():
+                print(f"Renaming {extracted_folder} -> {contentvec_dir}")
+                shutil.move(str(extracted_folder), str(contentvec_dir))
 
             # Remove zip file after extraction
             zip_path.unlink()
