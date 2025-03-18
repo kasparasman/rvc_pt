@@ -76,6 +76,7 @@ class VoiceConverter:
         self.n_spk = None  # Number of speakers in the model
         self.use_f0 = None  # Whether the model uses F0
         self.loaded_model = None
+        self.device = self.config.device  # or torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     def load_hubert(self, embedder_model: str, embedder_model_custom: str = None):
         """
