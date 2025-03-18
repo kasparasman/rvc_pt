@@ -34,7 +34,13 @@ def download_and_setup_models():
             os.rename(extracted_dir, target_dir)
         
         # Remove zip file
+        # Remove zip file
         zip_path.unlink()
+        
+        # Verify contentvec directory exists and is a directory
+        target_dir = infer_dir / 'contentvec'
+        if not target_dir.exists() or not target_dir.is_dir():
+            raise ValueError("ContentVec model extraction failed - directory not found")
         print("ContentVec model setup complete.")
 
     except Exception as e:
