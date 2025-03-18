@@ -28,7 +28,7 @@ warnings.filterwarnings("ignore")
 now_dir = os.getcwd()
 sys.path.append(now_dir)
 
-base_path = os.path.join(str(RVC_MODELS_DIR), "formant", "stftpitchshift")
+base_path = os.path.join(str(BASE_DIR), "formant", "stftpitchshift")
 stft = base_path + ".exe" if sys.platform == "win32" else base_path
 
 
