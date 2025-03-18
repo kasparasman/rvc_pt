@@ -14,7 +14,7 @@ if TYPE_CHECKING:
 
 BASE_DIR = Path.cwd()
 MODELS_DIR = Path(os.getenv("URVC_MODELS_DIR") or BASE_DIR / "models")
-RVC_MODELS_DIR = r"C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer"
+RVC_MODELS_DIR = BASE_DIR / "rvc/infer/"
 VOICE_MODELS_DIR = r"C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer"
 EMBEDDER_MODELS_DIR = r"C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\models\rvc\embedders"
 

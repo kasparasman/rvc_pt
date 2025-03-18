@@ -110,7 +110,7 @@ def load_embedding(embedder_model, custom_embedder=None):
     
     # If embedder_model is "contentvec", use the custom folder path.
     if embedder_model.lower() == "contentvec":
-        model_path = r"C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\models\rvc\embedders\contentvec"
+        model_path = os.path.join(RVC_MODELS_DIR, "models", "rvc", "embedders", "contentvec") if custom_embedder is None else custom_embedder
     else:
         raise ValueError(f"Embedder model '{embedder_model}' not supported. Only 'contentvec' is supported.")
     
