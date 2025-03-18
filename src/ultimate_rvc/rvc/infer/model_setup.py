@@ -27,8 +27,11 @@ def download_and_setup_models():
         
         # Rename directory if needed
         extracted_dir = next(infer_dir.glob('*contentvec*'), None)
+        target_dir = infer_dir / 'contentvec'
         if extracted_dir and extracted_dir.name != 'contentvec':
-            os.rename(extracted_dir, infer_dir / 'contentvec')
+            if target_dir.exists():
+                shutil.rmtree(target_dir)
+            os.rename(extracted_dir, target_dir)
         
         # Remove zip file
         zip_path.unlink()
