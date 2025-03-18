@@ -35,7 +35,8 @@ from ultimate_rvc.typing_extra import F0Method, RVCContentType, EmbedderModel
 
 # Set up directory paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CONTENTVEC_DIR = os.path.join(BASE_DIR, "contentvec")
+CONTENTVEC_DIR = os.path.join(BASE_DIR, "models", "rvc", "embedders",  "contentvec")
+model_path = os.path.join(BASE_DIR, "argos.pth")
 
 def run_inference(
     input_audio: str,
@@ -60,7 +61,6 @@ def run_inference(
     # Here, model_name is used as an identifier for the voice model.
     # Make sure that model_name corresponds to a directory or identifier expected by validate_model_exists.
     model_name = "argos"
-    model_path = "./models/argos/argos.pth"
     print("Model exists:", model_path, "name:", model_name)
     # Use the directory of the output_audio as the target directory
     output_dir = os.path.dirname(os.path.abspath(output_audio))

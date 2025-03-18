@@ -214,7 +214,7 @@ def wavify(
     return wav_path
 
 
-def _get_rvc_files(model_name: str) -> tuple[Path, Path | None]:
+def _get_rvc_files(model_path: StrPath) -> tuple[Path, Path | None]:
     """
     Get the RVC model file and potential index file of a voice model.
 
@@ -237,8 +237,8 @@ def _get_rvc_files(model_name: str) -> tuple[Path, Path | None]:
 
 
     """
-    model_file = r"C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\argos.pth" 
-    index_file = r"C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\argos.index"
+    model_file = model_path
+    index_file = Path(model_path).with_suffix('.index')
     return model_file, index_file
 
 
@@ -262,6 +262,7 @@ def convert(
     audio_track: StrPath,
     directory: StrPath,
     model_name: str,
+    model_path: StrPath,
     n_octaves: int = 0,
     n_semitones: int = 0,
     f0_methods: Sequence[F0Method] | None = None,
@@ -398,7 +399,7 @@ def convert(
         percentage,
         progress_bar,
     )
-    rvc_model_path, rvc_index_path = _get_rvc_files(model_name)
+    rvc_model_path, rvc_index_path = _get_rvc_files(model_path)
     print(rvc_model_path,";", rvc_index_path)
     voice_converter = _get_voice_converter()
     logger.debug("starting convert audio function. Emmbed model: %s", embedder_model)

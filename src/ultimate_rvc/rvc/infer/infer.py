@@ -517,7 +517,7 @@ class VoiceConverter:
 
         """
         self.cpt = (
-            torch.load(weight_root, map_location="cpu", weights_only=False)
+            torch.load(weight_root, map_location="gpu", weights_only=False)
             if os.path.isfile(weight_root)
             else None
         )
@@ -534,10 +534,10 @@ class VoiceConverter:
             return
 
         logger.info("Starting network setup...")
-
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         try:
             # Load the original configuration from config.json
-            config_path = r"C:\Users\Kasparas\argos_tts\Main_RVC\u-rvc_GcolabCp\src\ultimate_rvc\rvc\infer\config.json"  # Update this path as needed.
+            config_path = os.path.join(BASE_DIR, "config.json")  # Update this path as needed.
             with open(config_path, "r") as f:
                 full_config = json.load(f)
             data_config = full_config["data"]
