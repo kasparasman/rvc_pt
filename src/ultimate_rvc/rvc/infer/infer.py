@@ -1,4 +1,4 @@
-import logger_config  # This will configure logging for the entire application
+import .logger_config  # This will configure logging for the entire application
 import logging
 logger = logging.getLogger(__name__)
 from typing import TYPE_CHECKING, Unpack
