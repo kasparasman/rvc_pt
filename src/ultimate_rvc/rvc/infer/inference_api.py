@@ -20,6 +20,7 @@ import os
 import time
 import argparse
 import torch
+from pathlib import Path  # Import Path
 
 print("Torch version:", torch.__version__)
 
@@ -36,7 +37,7 @@ from ultimate_rvc.typing_extra import F0Method, RVCContentType, EmbedderModel
 # Set up directory paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONTENTVEC_DIR = os.path.join(BASE_DIR, "models", "rvc", "embedders",  "contentvec")
-model_path = os.path.join(BASE_DIR, "argos.pth")
+model_path = Path(BASE_DIR) / "argos.pth"  # Ensures StrPath compatibility
 
 def run_inference(
     input_audio: str,
@@ -101,6 +102,7 @@ def run_inference(
         audio_track=input_audio,
         directory=output_dir,
         model_name=model_name,
+        model_path=model_path,
         **conversion_params
     )
     
