@@ -517,7 +517,7 @@ class VoiceConverter:
 
         """
         self.cpt = (
-            torch.load(weight_root, map_location="cuda:0", weights_only=False)
+            torch.load(weight_root, map_location=self.device, weights_only=False)
             if os.path.isfile(weight_root)
             else None
         )
